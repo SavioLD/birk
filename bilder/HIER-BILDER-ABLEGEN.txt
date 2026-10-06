@@ -2,25 +2,22 @@ BILDMATERIAL HIER ABLEGEN
 =========================
 
 Die Seite sucht die Dateien automatisch. Einfach hier ablegen, committen,
-pushen - fertig. Nichts im Code ändern.
+pushen - fertig. Nichts im Code aendern.
 
-LOGO (Original, unverändert - nicht nachbauen, nicht einfärben)
-  bilder/logo.svg            bevorzugt (SVG skaliert verlustfrei)
-  bilder/logo.png            Alternative, mind. 600 px breit, transparent
-  bilder/logo-weiss.png      optional: helle Variante für Hero + Footer
+ERLEDIGT
+  logo.png            freigestelltes Original, wird bereits eingebunden
+  logo-original.jpg   die hochgeladene Originaldatei
 
-  Alternativ erkannt: birk-logo.svg / birk-logo.png / birk-logo-weiss.svg/.png
+NOCH OFFEN
+  hero.jpg            grosses Bild im Kopfbereich, quer, mind. 1920 x 1080 px
+                      auch erkannt: hero.jpeg / hero.png / hero.webp
+                      Ohne Foto bleibt der blaue Verlauf stehen - nichts
+                      wirkt kaputt.
 
-  Solange kein Logo da ist, steht automatisch der Schriftzug "BIRK" mit
-  rotem Balken. Sobald eine Datei gefunden wird, ersetzt sie den Schriftzug.
+  logo-quer.png       optional: quer liegende Logo-Variante, falls vorhanden.
+                      Wirkt im Header ruhiger als das gestapelte Signet.
 
-HERO-FOTO (grosses Bild im Kopfbereich)
-  bilder/hero.jpg            quer, mind. 1920 x 1080 px
-  auch erkannt: hero.jpeg / hero.png / hero.webp / lager.jpg
-
-  Ohne Foto bleibt der dunkle Farbverlauf stehen - nichts wirkt kaputt.
-
-FÜR DIE CREATIVES (Schritt 2)
-  Alles weitere Material einfach ebenfalls hier ablegen:
+FUER DIE CREATIVES (Schritt 2)
+  Alles weitere Material ebenfalls hier ablegen:
   Lager, Team, Niederlassung, Badausstellung, Fuhrpark, Mitarbeitende.
   Je mehr echtes Material, desto besser werden die Anzeigen.

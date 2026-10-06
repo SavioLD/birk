@@ -22,16 +22,18 @@ und ausschließlich diese drei.
 ## ⚠️ Vor dem Livegang bitte prüfen
 
 Die Build-Umgebung hatte **keinen Netzzugriff** auf `gut-gruppe.de`, `birk.de`
-und `api-v2.lead-table.com` (Egress-Policy). Diese Werte sind deshalb
-hergeleitet und sollten einmal gegengeprüft werden:
+und `api-v2.lead-table.com` (Egress-Policy). Farben und Logo liegen inzwischen
+vor, offen sind nur noch Mail-Adresse und Rechts-Links:
 
-| Was | Aktueller Wert | Woher |
+| Was | Aktueller Wert | Status |
 |---|---|---|
-| CI-Rot | `#c8102e` | aus dem BIRK-Favicon im Browser-Screenshot gemessen (Farbton ≈ 350°) |
+| CI-Blau | `#00508e` | ✅ verbindlich vom Kunden |
+| CI-Rot | `#dd042b` | ✅ verbindlich vom Kunden |
+| Logo | `bilder/logo.png` | ✅ Original, freigestellt – Farben unverändert |
 | Schrift | Barlow | technisch-industrieller Charakter, DIN-nah; kein Styleguide verfügbar |
-| Logo | Schriftzug-Fallback | **Original-Logo bitte nach `bilder/logo.svg` legen** – wird dann automatisch eingebunden |
-| Bewerbungs-Mail | `bewerbung@birk.de` | Annahme (Domain verifiziert, Postfach nicht) |
-| Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | Annahme |
+| Hero-Foto | fehlt noch | ohne Foto bleibt der blaue Verlauf stehen |
+| Bewerbungs-Mail | `bewerbung@birk.de` | ⚠️ Annahme (Domain verifiziert, Postfach nicht) |
+| Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | ⚠️ Annahme |
 
 Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 `<script>` am Seitenende – dort einmal ändern, die ganze Seite zieht nach.
@@ -42,14 +44,50 @@ Farben und Schriften stecken **ausschließlich** im `:root`-Block ganz oben in
 `index.html`. Dort einmal ändern – der Rest der Seite zieht automatisch nach.
 
 ```css
---brand:#c8102e;      /* BIRK-Rot                            */
---brand-dark:#a60d26; /* Hover-Zustand                       */
---brand-700:#9b0c22;  /* Rot-Ton für Text auf Hell           */
---brand-900:#141a21;  /* Anthrazit: Headlines, Hero, Footer  */
---brand-soft:#fdecef; /* heller Rot-Ton für Flächen          */
---on-brand:#ffffff;   /* Textfarbe AUF Rot (Kontrast 5,9:1)  */
+--blue:#00508e;       /* Hausfarbe Blau – verbindliche CI       */
+--blue-dark:#003a68;  /* Hover / Tiefe                          */
+--blue-soft:#e6effa;  /* heller Blau-Ton für Flächen            */
+--dark:#00223d;       /* dunkle Flächen: Hero, Footer, Mid-CTA  */
+--brand:#dd042b;      /* Rot – verbindliche CI                  */
+--brand-dark:#b80323; /* Hover-Zustand                          */
+--brand-700:#b80323;  /* Rot-Ton für kleinen Text (6,8:1)       */
+--brand-900:#00508e;  /* Headlines in Hausfarbe Blau (8,3:1)    */
+--brand-soft:#fdeaee; /* heller Rot-Ton für Flächen             */
+--on-brand:#ffffff;   /* Textfarbe AUF Rot (5,1:1)              */
 --f-display / --f-body: Barlow
 ```
+
+### Farbaufteilung
+
+Die Seite folgt dem Logo: **Blau trägt die Struktur, Rot ist die Aktionsfarbe.**
+
+| Blau `#00508e` | Rot `#dd042b` |
+|---|---|
+| Überschriften | Buttons / CTAs |
+| Icons und Icon-Flächen | Fortschrittsbalken |
+| Stellen-Tags | ausgewählte Antwort im Formular |
+| dunkle Flächen (Hero, Footer) | Kicker, Aufzählungspunkte, Schritt-Nummern |
+
+Alle Kontraste erfüllen WCAG AA (kleinster Wert: Weiß auf Rot, 5,1:1).
+
+## Logo
+
+- `bilder/logo.png` – freigestelltes Original, wird automatisch eingebunden
+- `bilder/logo-original.jpg` – die hochgeladene Originaldatei
+
+Das Logo wurde **nicht nachgebaut, nicht neu gezeichnet und nicht eingefärbt**.
+Der weiße Hintergrund des JPEGs wurde exakt herausgerechnet (Un-Matting), die
+Volltonfarben sind unverändert: `#004684` und `#c7002b`.
+
+> Die Logo-Datei trägt also minimal andere Werte als die verbindliche CI
+> (`#00508e` / `#dd042b`). Das ist Absicht – das Logo bleibt unangetastet,
+> die Seite ringsum nutzt die offiziellen Farben.
+
+Auf dunklem Grund (Hero, Footer) steht das Logo auf einer **weißen Platte**,
+damit es unverändert bleiben kann und trotzdem lesbar ist. Falls es eine
+**quer liegende** Logo-Variante gibt: als `bilder/logo-quer.png` ablegen und in
+`loadLogo(...)` im Header vorziehen – im 74 px hohen Header wirkt sie ruhiger
+als das gestapelte Signet.
 
 ## Stellen pflegen
 
