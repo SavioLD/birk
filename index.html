@@ -102,12 +102,12 @@ img{max-width:100%;display:block}
 /* ---------- HERO ---------- */
 .hero{position:relative;overflow:hidden;background:var(--dark)}
 .hero__media{position:absolute;inset:0;background-color:#00223d;background-image:var(--grad);background-size:cover;background-position:center}
-.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,20,36,.42),transparent 60%)}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(0,19,34,.95) 0%,rgba(0,19,34,.88) 32%,rgba(0,23,41,.66) 52%,rgba(0,23,41,.32) 72%,rgba(0,23,41,.12) 100%)}
 .hero__inner{position:relative;display:flex;min-height:580px}
-.hero__panel{position:relative;flex:0 0 56%;max-width:660px;display:flex;flex-direction:column;justify-content:center;padding:158px 48px 56px;color:#fff}
+.hero__panel{position:relative;z-index:1;flex:0 0 56%;max-width:660px;display:flex;flex-direction:column;justify-content:center;padding:158px 48px 56px;color:#fff}
 .hero__panel>*{text-shadow:0 1px 14px rgba(0,14,26,.55)}
 .hero__cta .btn{text-shadow:none}
-.hero__panel::before{content:"";position:absolute;inset:0 auto 0 -100vw;width:calc(100vw + 62%);background:linear-gradient(112deg,rgba(0,26,46,.97) 0%,rgba(0,47,82,.93) 46%,rgba(0,92,152,.55) 100%);z-index:-1;border-radius:0 62% 62% 0 / 0 50% 50% 0;box-shadow:0 30px 80px rgba(0,20,36,.35)}
+.hero__panel::before{content:"";position:absolute;inset:0 auto 0 -100vw;width:calc(100vw + 62%);background:linear-gradient(112deg,rgba(0,34,61,.82) 0%,rgba(0,52,92,.58) 46%,rgba(0,92,152,.18) 100%);z-index:-1;border-radius:0 62% 62% 0 / 0 50% 50% 0;box-shadow:0 30px 80px rgba(0,20,36,.35)}
 .hero__logo{margin-bottom:26px}
 .hero__logo img{display:none;height:104px;width:auto;background:#fff;border-radius:16px;padding:13px 17px;box-shadow:0 14px 36px rgba(0,16,30,.42)}
 .hero__logo .brand__fallback b{font-family:var(--f-display);font-weight:900;font-size:40px;letter-spacing:.07em;color:#fff;line-height:1}
@@ -185,6 +185,17 @@ section[id],.form-card{scroll-margin-top:90px}
 @media(max-width:720px){.perks ul{grid-template-columns:1fr}.perks{padding:22px 20px}}
 .perks li{display:flex;gap:11px;font-size:14.5px;font-weight:600;color:var(--ink-soft);line-height:1.45}
 .perks li svg{width:19px;height:19px;stroke:var(--blue);flex:0 0 auto;margin-top:2px}
+
+/* ---------- Einblick-Galerie ---------- */
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:22px}
+@media(max-width:920px){.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.gallery{grid-template-columns:1fr}}
+.shot{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+/* Feste Bildhoehe: quer- und hochformatige Fotos stehen trotzdem sauber
+   nebeneinander, und es gibt keinen Layout-Sprung beim Nachladen. */
+.shot img{width:100%;height:230px;object-fit:cover;display:block;background:var(--panel-2)}
+.shot figcaption{padding:14px 17px;font-size:14px;font-weight:600;color:var(--ink-soft);line-height:1.45}
+@media(max-width:620px){.shot img{height:210px}}
 
 /* ---------- process ---------- */
 .process{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -455,6 +466,24 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
         <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Arbeitsumfeld mit Zukunft und sicherer Arbeitsplatz</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Individuelle Förderung</span></li>
       </ul>
+    </div>
+
+    <!-- ---------- Einblick ----------
+         Bilder liegen in bilder/. Fehlt eines, bleibt die graue Flaeche
+         stehen - die Seite bricht nicht. -->
+    <div class="gallery">
+      <figure class="shot reveal">
+        <img src="bilder/einblick-beratung.jpg" alt="Zwei Kollegen im Gespräch an einem Besprechungstisch bei BIRK" loading="lazy" decoding="async" />
+        <figcaption>Kurze Wege, offene Türen – bei Fragen sitzt der Ansprechpartner zwei Räume weiter.</figcaption>
+      </figure>
+      <figure class="shot reveal">
+        <img src="bilder/einblick-schulung.jpg" alt="Mitarbeitende bei einer Produktschulung" loading="lazy" decoding="async" />
+        <figcaption>Schulungen und Weiterbildungen gehören bei uns dazu – fachlich bleibst du am Ball.</figcaption>
+      </figure>
+      <figure class="shot reveal">
+        <img src="bilder/einblick-badausstellung.jpg" alt="Badausstellung mit freistehender Badewanne" loading="lazy" decoding="async" />
+        <figcaption>Unsere Badausstellung in Rottweil – hier beraten wir Fachhandwerk und Bauherren.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -916,16 +945,16 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       probe.onerror = tryNext; probe.src = url;
     })();
   }
-  loadLogo(document.getElementById("logoHeader"), ["bilder/birk-logo.svg","bilder/birk-logo.png","bilder/logo.svg","bilder/logo.png","bilder/logo.jpg"]);
-  loadLogo(document.getElementById("logoHero"),   ["bilder/birk-logo-weiss.svg","bilder/birk-logo-weiss.png","bilder/logo-weiss.svg","bilder/logo-weiss.png","bilder/birk-logo.svg","bilder/birk-logo.png","bilder/logo.svg","bilder/logo.png"]);
-  loadLogo(document.getElementById("logoFooter"), ["bilder/birk-logo-weiss.svg","bilder/birk-logo-weiss.png","bilder/logo-weiss.svg","bilder/logo-weiss.png","bilder/birk-logo.svg","bilder/birk-logo.png","bilder/logo.svg","bilder/logo.png"]);
+  loadLogo(document.getElementById("logoHeader"), ["bilder/logo.png","bilder/logo-quer.png","bilder/logo.svg"]);
+  loadLogo(document.getElementById("logoHero"),   ["bilder/logo.png","bilder/logo.svg"]);
+  loadLogo(document.getElementById("logoFooter"), ["bilder/logo.png","bilder/logo.svg"]);
 
   /* ---------- Hero-Foto (optional) ----------
      Liegt bilder/hero.jpg (o. Ae.) im Repo, wird es automatisch geladen.
      Fehlt es, bleibt der Farbverlauf stehen - kein kaputtes Bild. */
   (function(){
     var heroMedia = document.getElementById("heroMedia");
-    var cands = ["bilder/hero.jpg","bilder/hero.jpeg","bilder/hero.png","bilder/hero.webp","bilder/lager.jpg"];
+    var cands = ["bilder/hero.jpg","bilder/hero.jpeg","bilder/hero.png","bilder/hero.webp"];
     (function tryNext(i){
       if (i >= cands.length) return;
       var probe = new Image();

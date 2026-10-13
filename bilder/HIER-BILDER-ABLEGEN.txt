@@ -1,23 +1,27 @@
-BILDMATERIAL HIER ABLEGEN
-=========================
+BILDMATERIAL
+============
 
-Die Seite sucht die Dateien automatisch. Einfach hier ablegen, committen,
-pushen - fertig. Nichts im Code aendern.
+Die Seite sucht die Dateien automatisch ueber ihren Namen. Austauschen
+heisst: gleiche Datei ueberschreiben, committen, pushen. Nichts im Code
+aendern.
 
-ERLEDIGT
-  logo.png            freigestelltes Original, wird bereits eingebunden
-  logo-original.jpg   die hochgeladene Originaldatei
+IM EINSATZ
+  logo.png                     Logo, freigestellt (Header, Hero, Footer)
+  hero.jpg                     grosses Bild im Kopfbereich
+  einblick-beratung.jpg        Galerie 1 - Gespraech
+  einblick-schulung.jpg        Galerie 2 - Schulung
+  einblick-badausstellung.jpg  Galerie 3 - Badausstellung
 
-NOCH OFFEN
-  hero.jpg            grosses Bild im Kopfbereich, quer, mind. 1920 x 1080 px
-                      auch erkannt: hero.jpeg / hero.png / hero.webp
-                      Ohne Foto bleibt der blaue Verlauf stehen - nichts
-                      wirkt kaputt.
+ORIGINALE (nicht auf der Seite, fuer die Creatives in Schritt 2)
+  logo-original.jpg            hochgeladene Logo-Datei
+  schulung-original.jpg        Schulung in voller Aufloesung, 3024 x 4032
+                               hochformat - gut fuer 4:5 und 9:16
 
-  logo-quer.png       optional: quer liegende Logo-Variante, falls vorhanden.
-                      Wirkt im Header ruhiger als das gestapelte Signet.
+OPTIONAL ERGAENZEN
+  logo-quer.png                quer liegende Logo-Variante, falls vorhanden.
+                               Wirkt im Header ruhiger als das gestapelte.
 
 FUER DIE CREATIVES (Schritt 2)
-  Alles weitere Material ebenfalls hier ablegen:
-  Lager, Team, Niederlassung, Badausstellung, Fuhrpark, Mitarbeitende.
-  Je mehr echtes Material, desto besser werden die Anzeigen.
+  Weiteres Material gerne hier ablegen: Lager, Fuhrpark, Team bei der
+  Arbeit, Aussenansicht der Niederlassung. Je mehr echtes Material,
+  desto besser werden die Anzeigen.
