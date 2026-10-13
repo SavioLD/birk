@@ -187,15 +187,14 @@ section[id],.form-card{scroll-margin-top:90px}
 .perks li svg{width:19px;height:19px;stroke:var(--blue);flex:0 0 auto;margin-top:2px}
 
 /* ---------- Einblick-Galerie ---------- */
-.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:22px}
-@media(max-width:920px){.gallery{grid-template-columns:1fr 1fr}}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:22px}
 @media(max-width:620px){.gallery{grid-template-columns:1fr}}
 .shot{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 /* Feste Bildhoehe: quer- und hochformatige Fotos stehen trotzdem sauber
    nebeneinander, und es gibt keinen Layout-Sprung beim Nachladen. */
-.shot img{width:100%;height:230px;object-fit:cover;display:block;background:var(--panel-2)}
+.shot img{width:100%;height:290px;object-fit:cover;display:block;background:var(--panel-2)}
 .shot figcaption{padding:14px 17px;font-size:14px;font-weight:600;color:var(--ink-soft);line-height:1.45}
-@media(max-width:620px){.shot img{height:210px}}
+@media(max-width:620px){.shot img{height:215px}}
 
 /* ---------- process ---------- */
 .process{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -475,10 +474,6 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       <figure class="shot reveal">
         <img src="bilder/einblick-beratung.jpg" alt="Zwei Kollegen im Gespräch an einem Besprechungstisch bei BIRK" loading="lazy" decoding="async" />
         <figcaption>Kurze Wege, offene Türen – bei Fragen sitzt der Ansprechpartner zwei Räume weiter.</figcaption>
-      </figure>
-      <figure class="shot reveal">
-        <img src="bilder/einblick-schulung.jpg" alt="Mitarbeitende bei einer Produktschulung" loading="lazy" decoding="async" />
-        <figcaption>Schulungen und Weiterbildungen gehören bei uns dazu – fachlich bleibst du am Ball.</figcaption>
       </figure>
       <figure class="shot reveal">
         <img src="bilder/einblick-badausstellung.jpg" alt="Badausstellung mit freistehender Badewanne" loading="lazy" decoding="async" />

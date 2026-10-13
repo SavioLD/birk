@@ -32,7 +32,7 @@ vor, offen sind nur noch Mail-Adresse und Rechts-Links:
 | Logo | `bilder/logo.png` | ✅ Original, freigestellt – Farben unverändert |
 | Schrift | Barlow | technisch-industrieller Charakter, DIN-nah; kein Styleguide verfügbar |
 | Hero-Foto | `bilder/hero.jpg` | ✅ Halle mit roter Wand |
-| Einblick-Galerie | 3 Fotos | ✅ Gespräch, Schulung, Badausstellung |
+| Einblick-Galerie | 2 Fotos | ✅ Gespräch, Badausstellung |
 | Bewerbungs-Mail | `bewerbung@birk.de` | ⚠️ Annahme (Domain verifiziert, Postfach nicht) |
 | Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | ⚠️ Annahme |
 
@@ -78,9 +78,7 @@ Alle Kontraste erfüllen WCAG AA (kleinster Wert: Weiß auf Rot, 5,1:1).
 | `logo.png` | Header, Hero, Footer |
 | `hero.jpg` | grosses Bild im Kopfbereich |
 | `einblick-beratung.jpg` | Galerie 1 |
-| `einblick-schulung.jpg` | Galerie 2 |
-| `einblick-badausstellung.jpg` | Galerie 3 |
-| `schulung-original.jpg` | nicht auf der Seite – volle Auflösung (3024 × 4032, hoch) für die Creatives |
+| `einblick-badausstellung.jpg` | Galerie 2 |
 
 Austauschen heisst: gleiche Datei überschreiben, committen, pushen. Die Seite
 findet sie über den Namen, im Code ist nichts zu ändern. Fehlt eine Datei,
