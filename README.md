@@ -52,8 +52,8 @@ Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 
 ## Woher die Inhalte stammen
 
-Regel für dieses Projekt: **nichts raten, nichts erfinden.** Jede Aussage auf
-der Seite lässt sich einer dieser drei Quellen zuordnen.
+Regel für dieses Projekt: **nichts raten, nichts erfinden.** Jede Aussage
+lässt sich einer dieser drei Quellen zuordnen.
 
 ### 1. Wörtlich aus dem Briefing
 Stellenbezeichnungen (Lager, Verkauf, Ausbildung) · die vier Benefits
@@ -62,37 +62,44 @@ Beruf im Gleichgewicht, Firmenfitness) · die vier Zusatzleistungen im
 Perks-Block · die K.-o.-Kriterien der Verkaufsstelle · Standort Rottweil ·
 CI-Farben `#00508e` / `#dd042b`
 
-### 2. Extern belegt (Websuche)
-Gebäudetechnik-Großhandel für Sanitär, Heizung, Lüftung, Klima · Kundschaft
-ist das Fachhandwerk · seit 2014 Teil der G.U.T. GRUPPE · Adresse
-Rheinwaldstraße 10, 78628 Rottweil
+### 2. Belegt über gut-gruppe.de und die BIRK-Stellenanzeigen
+
+| Angabe | Wert |
+|---|---|
+| E-Mail Niederlassung | `rottweil@birk.de` |
+| Telefon | +49 741 2605-0 |
+| Adresse | Rheinwaldstraße 10, 78628 Rottweil |
+| Datenschutz (Bewerbungen) | `gut-gruppe.de/de/datenschutzerklaerung-fuer-bewerbungen` |
+| Produktbereiche Rottweil | Installation, Sanitär, Heizung, Lüftung, Photovoltaik |
+| Unternehmen | inhabergeführt in dritter Generation, seit 2014 Teil der G.U.T. GRUPPE |
+| Badausstellungen | Nürtingen, Rottweil, Heidenheim |
+| Verkaufsstelle | Vollzeit; Aufgaben aus „Technischer Verkauf im Innendienst (w/m/d)", Niederlassung Rottweil |
+
+Die im Briefing genannten K.-o.-Kriterien decken sich **wörtlich** mit dem
+Profil dieser Stellenanzeige – das Briefing war also korrekt.
 
 ### 3. Mein Entwurf – braucht Freigabe von BIRK
-Die **Aufgabenlisten** der drei Stellen und die **Profil-Listen** von Lager
-und Ausbildung. Das Briefing nannte nur die Stellenbezeichnungen, deshalb
-sind das branchenübliche Formulierungen, keine Angaben von BIRK. Ebenso die
+Die **Aufgaben- und Profil-Listen von Lager und Ausbildung**. Für diese beiden
+Stellen gibt es keine veröffentlichte Anzeige, deshalb sind das
+branchenübliche Formulierungen, keine Angaben von BIRK. Ebenso die
 **Screening-Fragen** von Lager und Ausbildung – das Briefing hat dafür
 ausdrücklich eigene Ergänzungen erlaubt.
 
-### Bewusst nicht auf der Seite
-Weil nicht bestätigt, stehen diese Dinge **nirgends**, statt geraten zu werden:
+### Weiterhin offen
 
 | Fehlt | Folge auf der Seite |
 |---|---|
-| Bewerbungs-E-Mail | Kontaktzeile und Footer-Mail werden ausgeblendet |
-| Impressum-Link | Footer-Eintrag wird ausgeblendet |
-| Datenschutz-Link | Link im Einwilligungstext wird ausgeblendet |
-| Vertragsart (Vollzeit?), Eintrittstermin | keine Angabe in den Stellen-Tags |
-| Ablauf nach der Bewerbung (Rückmeldezeit, Kanal) | keine Zusage im Ablauf-Abschnitt |
-| Konditionen der Benefits | Benefit-Karten nennen nur die Leistung selbst |
-| Ort des Badausstellungs-Fotos | Bildunterschrift ohne Ortsangabe |
+| Impressum-URL | Footer-Eintrag wird ausgeblendet |
+| Ort des Badausstellungs-Fotos | Bildunterschrift ohne Ortsangabe – BIRK hat drei Ausstellungen |
+| Vertragsart Lager und Ausbildung | kein Tag; nur für Verkauf ist Vollzeit belegt |
+| Ablauf nach der Bewerbung | keine Zusage zu Rückmeldezeit oder Kanal |
+| Konditionen der Benefits | Karten nennen nur die Leistung selbst |
 
-**Die drei Werte in `CONFIG`** (`mail`, `datenschutz`, `impressum`) stehen auf
-`""`. Sobald sie gefüllt sind, blendet die Seite die zugehörigen Elemente
-automatisch wieder ein – es ist nichts weiter zu ändern.
+Alles davon steht in `CONFIG` ganz oben im `<script>`. Leere Werte blendet die
+Seite automatisch aus, statt auf ein geratenes Ziel zu zeigen.
 
-> ⚠️ Vor dem Einsatz in Werbeanzeigen sollten Impressum- und Datenschutz-Link
-> gesetzt sein.
+> ⚠️ Der Impressum-Link sollte gesetzt sein, bevor die Seite in Werbeanzeigen
+> läuft.
 
 ## CI anpassen
 
