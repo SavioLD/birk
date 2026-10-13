@@ -35,6 +35,17 @@ vor, offen sind nur noch Mail-Adresse und Rechts-Links:
 | Einblick-Galerie | 2 Fotos | ✅ Gespräch, Badausstellung |
 | Bewerbungs-Mail | `bewerbung@birk.de` | ⚠️ Annahme (Domain verifiziert, Postfach nicht) |
 | Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | ⚠️ Annahme |
+| Standort-Adresse | Rheinwaldstraße 10, 78628 Rottweil | ✅ extern bestätigt (ELEMENTS Rottweil) |
+| Ort des Badausstellungs-Fotos | bewusst nicht benannt | ⚠️ nicht überprüfbar, s. u. |
+
+### Bildunterschriften
+
+Birk betreibt Badausstellungen in **Nürtingen, Rottweil und Heidenheim**.
+Welche davon auf `einblick-badausstellung.jpg` zu sehen ist, liess sich nicht
+feststellen: die Datei enthält keine EXIF-Daten, und `birk.de` sowie
+`gut-gruppe.de` sind aus der Build-Umgebung nicht erreichbar. Die
+Bildunterschrift nennt deshalb **keinen Ort**. Wer es sicher weiss, kann sie
+in `index.html` ergänzen.
 
 Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 `<script>` am Seitenende – dort einmal ändern, die ganze Seite zieht nach.
