@@ -50,6 +50,50 @@ in `index.html` ergänzen.
 Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 `<script>` am Seitenende – dort einmal ändern, die ganze Seite zieht nach.
 
+## Woher die Inhalte stammen
+
+Regel für dieses Projekt: **nichts raten, nichts erfinden.** Jede Aussage auf
+der Seite lässt sich einer dieser drei Quellen zuordnen.
+
+### 1. Wörtlich aus dem Briefing
+Stellenbezeichnungen (Lager, Verkauf, Ausbildung) · die vier Benefits
+(E-Bike-Leasing, Weihnachts- und Urlaubsgeld, 30 Tage Urlaub, Familie und
+Beruf im Gleichgewicht, Firmenfitness) · die vier Zusatzleistungen im
+Perks-Block · die K.-o.-Kriterien der Verkaufsstelle · Standort Rottweil ·
+CI-Farben `#00508e` / `#dd042b`
+
+### 2. Extern belegt (Websuche)
+Gebäudetechnik-Großhandel für Sanitär, Heizung, Lüftung, Klima · Kundschaft
+ist das Fachhandwerk · seit 2014 Teil der G.U.T. GRUPPE · Adresse
+Rheinwaldstraße 10, 78628 Rottweil
+
+### 3. Mein Entwurf – braucht Freigabe von BIRK
+Die **Aufgabenlisten** der drei Stellen und die **Profil-Listen** von Lager
+und Ausbildung. Das Briefing nannte nur die Stellenbezeichnungen, deshalb
+sind das branchenübliche Formulierungen, keine Angaben von BIRK. Ebenso die
+**Screening-Fragen** von Lager und Ausbildung – das Briefing hat dafür
+ausdrücklich eigene Ergänzungen erlaubt.
+
+### Bewusst nicht auf der Seite
+Weil nicht bestätigt, stehen diese Dinge **nirgends**, statt geraten zu werden:
+
+| Fehlt | Folge auf der Seite |
+|---|---|
+| Bewerbungs-E-Mail | Kontaktzeile und Footer-Mail werden ausgeblendet |
+| Impressum-Link | Footer-Eintrag wird ausgeblendet |
+| Datenschutz-Link | Link im Einwilligungstext wird ausgeblendet |
+| Vertragsart (Vollzeit?), Eintrittstermin | keine Angabe in den Stellen-Tags |
+| Ablauf nach der Bewerbung (Rückmeldezeit, Kanal) | keine Zusage im Ablauf-Abschnitt |
+| Konditionen der Benefits | Benefit-Karten nennen nur die Leistung selbst |
+| Ort des Badausstellungs-Fotos | Bildunterschrift ohne Ortsangabe |
+
+**Die drei Werte in `CONFIG`** (`mail`, `datenschutz`, `impressum`) stehen auf
+`""`. Sobald sie gefüllt sind, blendet die Seite die zugehörigen Elemente
+automatisch wieder ein – es ist nichts weiter zu ändern.
+
+> ⚠️ Vor dem Einsatz in Werbeanzeigen sollten Impressum- und Datenschutz-Link
+> gesetzt sein.
+
 ## CI anpassen
 
 Farben und Schriften stecken **ausschließlich** im `:root`-Block ganz oben in

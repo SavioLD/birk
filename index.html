@@ -172,10 +172,10 @@ section[id],.form-card{scroll-margin-top:90px}
 .benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
 @media(max-width:980px){.benefit-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.benefit-grid{grid-template-columns:1fr}}
-.benefit{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:24px 22px}
-.benefit__ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--blue-soft);border:1px solid var(--line-strong);margin-bottom:14px}
+.benefit{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:20px 22px;display:flex;align-items:center;gap:15px}
+.benefit__ic{width:46px;height:46px;flex:0 0 46px;border-radius:12px;display:grid;place-items:center;background:var(--blue-soft);border:1px solid var(--line-strong)}
 .benefit__ic svg{width:23px;height:23px;stroke:var(--blue)}
-.benefit b{font-family:var(--f-display);font-weight:800;font-size:16.5px;display:block;margin-bottom:6px;color:var(--brand-900)}
+.benefit b{font-family:var(--f-display);font-weight:800;font-size:16.5px;display:block;color:var(--brand-900);line-height:1.25}
 .benefit p{font-size:14px;color:var(--ink-soft);font-weight:500}
 
 /* ---------- perks (zusaetzlich, bewusst ruhiger als die Benefit-Karten) ---------- */
@@ -412,7 +412,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
         <div class="hero__reassure">
           <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Lebenslauf nötig</span>
           <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Anschreiben</span>
-          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Antwort persönlich</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Nur vier kurze Fragen</span>
         </div>
       </div>
     </div>
@@ -424,9 +424,9 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
   <div class="shell">
     <div class="trust__grid">
       <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M10 21v-6h4v6"/></svg><div><b>Sicherer Arbeitsplatz</b><span>Arbeitsumfeld mit Zukunft</span></div></div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/><path d="M12 8S9.5 3 7 3a2.5 2.5 0 0 0 0 5"/><path d="M12 8s2.5-5 5-5a2.5 2.5 0 0 1 0 5"/></svg><div><b>Weihnachts- &amp; Urlaubsgeld</b><span>Plus 30 Tage Urlaub</span></div></div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l1.5 4"/><path d="m5.5 17.5 4-9h4l3.5 9"/><path d="M9.5 8.5h-3"/></svg><div><b>E-Bike-Leasing</b><span>Für Arbeitsweg und Freizeit</span></div></div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11v11h-11z"/><path d="M3 9v6M21 9v6M6.5 12h11"/></svg><div><b>Firmenfitness</b><span>Fit bleiben, wir zahlen mit</span></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/><path d="M12 8S9.5 3 7 3a2.5 2.5 0 0 0 0 5"/><path d="M12 8s2.5-5 5-5a2.5 2.5 0 0 1 0 5"/></svg><div><b>Weihnachts- und Urlaubsgeld</b><span>Plus 30 Tage Urlaub</span></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l1.5 4"/><path d="m5.5 17.5 4-9h4l3.5 9"/><path d="M9.5 8.5h-3"/></svg><div><b>E-Bike-Leasing</b></div></div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11v11h-11z"/><path d="M3 9v6M21 9v6M6.5 12h11"/></svg><div><b>Firmenfitness</b></div></div>
     </div>
   </div>
 </div>
@@ -436,7 +436,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
   <div class="shell">
     <span class="kicker">Offene Stellen</span>
     <h2 class="sec-title">Drei Stellen. Ein Team.<br />Welche passt zu dir?</h2>
-    <p class="sec-lead">Alle Stellen in unserer Niederlassung Rottweil – dort, wo das Fachhandwerk der Region seine Ware holt. Eintritt nach Absprache, auch kurzfristig möglich.</p>
+    <p class="sec-lead">Alle Stellen in der Niederlassung Rottweil – dort, wo das Fachhandwerk der Region seine Ware holt.</p>
 
     <!-- wird aus der JOBS-Config am Seitenende erzeugt -->
     <div class="job-grid" id="jobGrid"></div>
@@ -447,13 +447,13 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
 <section id="benefits">
   <div class="shell">
     <span class="kicker">Warum BIRK</span>
-    <h2 class="sec-title">Großhandel mit kurzen Wegen – und einem Team, das zusammenhält.</h2>
-    <p class="sec-lead">Als Gebäudetechnik-Großhandel sind wir der Partner des Fachhandwerks in der Region: Sanitär, Heizung, Lüftung und Klima. Bei uns zählt, dass die Ware läuft und die Kundschaft gut beraten wird – und dass das Drumherum für dich stimmt.</p>
+    <h2 class="sec-title">Gebäudetechnik-Großhandel. Partner des Fachhandwerks in der Region.</h2>
+    <p class="sec-lead">Sanitär, Heizung, Lüftung und Klima: Unsere Kundschaft sind die Fachhandwerksbetriebe der Region. Seit 2014 gehört BIRK zur G.U.T. GRUPPE. Das sind die Leistungen, die für die ausgeschriebenen Stellen gelten:</p>
     <div class="benefit-grid">
-      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l1.5 4"/><path d="m5.5 17.5 4-9h4l3.5 9"/><path d="M9.5 8.5h-3"/></svg></div><b>E-Bike-Leasing</b><p>Dein Wunschrad über uns geleast – für den Arbeitsweg und für alles danach. Günstiger als selbst gekauft und gut für den Rücken.</p></div>
-      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/><path d="M12 8S9.5 3 7 3a2.5 2.5 0 0 0 0 5"/><path d="M12 8s2.5-5 5-5a2.5 2.5 0 0 1 0 5"/></svg></div><b>Weihnachts- &amp; Urlaubsgeld</b><p>Zweimal im Jahr gibt es etwas obendrauf – dazu 30 Tage Urlaub. Feste Größen, mit denen du planen kannst.</p></div>
-      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><b>Familie und Beruf im Gleichgewicht</b><p>Geregelte Arbeitszeiten und verlässliche Planung. Feierabend heißt bei uns Feierabend – damit neben dem Job genug Platz bleibt.</p></div>
-      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11v11h-11z"/><path d="M3 9v6M21 9v6M6.5 12h11"/></svg></div><b>Firmenfitness</b><p>Mit unserem Firmenfitness-Angebot trainierst du vergünstigt – im Studio deiner Wahl, so oft du magst.</p></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h2l1.5 4"/><path d="m5.5 17.5 4-9h4l3.5 9"/><path d="M9.5 8.5h-3"/></svg></div><b>E-Bike-Leasing</b></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M12 8v13M3 12h18"/><path d="M12 8S9.5 3 7 3a2.5 2.5 0 0 0 0 5"/><path d="M12 8s2.5-5 5-5a2.5 2.5 0 0 1 0 5"/></svg></div><b>Weihnachts- und Urlaubsgeld</b></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><b>Familie und Beruf im Gleichgewicht</b></div>
+      <div class="benefit reveal"><div class="benefit__ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11v11h-11z"/><path d="M3 9v6M21 9v6M6.5 12h11"/></svg></div><b>Firmenfitness</b></div>
     </div>
 
     <!-- bewusst ruhiger gehalten: positiv eingebaut, nicht als Haupt-Benefit -->
@@ -473,7 +473,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
     <div class="gallery">
       <figure class="shot reveal">
         <img src="bilder/einblick-beratung.jpg" alt="Zwei Kollegen im Gespräch an einem Besprechungstisch" loading="lazy" decoding="async" />
-        <figcaption>Kurze Wege, offene Türen – bei Fragen ist jemand da, vom ersten Tag an.</figcaption>
+        <figcaption>Beratung und Austausch gehören bei BIRK zum Arbeitsalltag.</figcaption>
       </figure>
       <figure class="shot reveal">
         <img src="bilder/einblick-badausstellung.jpg" alt="Blick in eine Badausstellung mit freistehender Badewanne" loading="lazy" decoding="async" />
@@ -490,8 +490,8 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
     <h2 class="sec-title">In drei Schritten zu BIRK.</h2>
     <div class="steps">
       <div class="step reveal"><b>Kurz bewerben</b><p>Stelle wählen, vier kurze Fragen beantworten, Kontaktdaten hinterlassen – fertig. Kein Lebenslauf, kein Anschreiben, keine Datei-Uploads.</p></div>
-      <div class="step reveal"><b>Wir melden uns persönlich</b><p>Du bekommst schnell eine Rückmeldung, und wir klären erste Fragen kurz und unkompliziert am Telefon.</p></div>
-      <div class="step reveal"><b>Kennenlernen vor Ort</b><p>Du schaust dir Niederlassung, Lager und Team in Rottweil an – und wenn's passt, machen wir dir ein Angebot.</p></div>
+      <div class="step reveal"><b>Deine Bewerbung geht direkt zu BIRK</b><p>Deine Angaben landen ohne Umweg bei den Verantwortlichen in Rottweil – ohne Bewerbungsportal und ohne Zwischenstation.</p></div>
+      <div class="step reveal"><b>Alles Weitere direkt mit BIRK</b><p>Rückmeldung, Kennenlernen und Konditionen besprichst du direkt mit BIRK – ohne Umweg über Dritte.</p></div>
     </div>
   </div>
 </section>
@@ -520,7 +520,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       <div class="apply__reassure">
         <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Anschreiben</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kein Lebenslauf</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Wir melden uns persönlich</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Keine Datei-Uploads</span>
       </div>
     </div>
 
@@ -561,14 +561,14 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
             verarbeitet (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO) – vertraulich und ohne Weitergabe an unbefugte Dritte.
             <a id="linkDatenschutz" href="https://www.gut-gruppe.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
           </p>
-          <div class="form-error" id="formError">Das hat leider nicht geklappt. Bitte versuche es noch einmal – oder schreib uns direkt: <strong id="errMail">bewerbung@birk.de</strong>.</div>
+          <div class="form-error" id="formError">Das hat leider nicht geklappt. Bitte versuche es in einem Moment noch einmal.<strong id="errMail"></strong></div>
         </div>
 
         <!-- ---------- ERFOLG ---------- -->
         <div class="result" id="successView">
           <div class="result__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
           <h3>Bewerbung eingegangen</h3>
-          <p>Stark! Wir haben deine Bewerbung erhalten und <strong>melden uns persönlich bei dir</strong>. Schau auch mal in dein Postfach – bis gleich.</p>
+          <p>Deine Bewerbung ist eingegangen und liegt jetzt <strong>direkt bei BIRK</strong>. Alles Weitere besprichst du von dort aus.</p>
         </div>
 
         <!-- ---------- K.-O.-ABBRUCH ---------- -->
@@ -600,12 +600,11 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       <h2 class="sec-title" style="margin:0 auto">Kurz &amp; knapp beantwortet</h2>
     </div>
     <div class="faq">
-      <details><summary>Brauche ich einen Lebenslauf?</summary><div class="faq__a">Nein. Für die Bewerbung reichen die Angaben im Formular – die Stelle, vier kurze Fragen und deine Kontaktdaten. Es gibt bewusst keinen Datei-Upload: Alles Weitere besprechen wir persönlich.</div></details>
-      <details><summary>Welche Voraussetzungen muss ich mitbringen?</summary><div class="faq__a">Das hängt von der Stelle ab – die Voraussetzungen stehen bei jeder Stelle direkt unter „Das setzen wir voraus". Im Lager zählt vor allem, dass du gerne mit anpackst; im Verkauf brauchst du eine abgeschlossene Ausbildung im technischen oder vertrieblichen Bereich und Erfahrung in unserer Branche. Für die Ausbildung reicht uns dein Schulabschluss und echtes Interesse.</div></details>
-      <details><summary>Wie schnell bekomme ich eine Rückmeldung?</summary><div class="faq__a">Wir melden uns persönlich und schnell – in der Regel telefonisch für ein kurzes, lockeres Erstgespräch.</div></details>
+      <details><summary>Brauche ich einen Lebenslauf?</summary><div class="faq__a">Nein. Für die Bewerbung reichen die Angaben im Formular – die Stelle, vier kurze Fragen und deine Kontaktdaten. Es gibt bewusst keinen Datei-Upload.</div></details>
+      <details><summary>Welche Voraussetzungen muss ich mitbringen?</summary><div class="faq__a">Das hängt von der Stelle ab – die Voraussetzungen stehen bei jeder Stelle direkt unter „Das setzen wir voraus". Für den Verkauf sind eine abgeschlossene Ausbildung im technischen oder vertrieblichen Bereich und Berufserfahrung in der Branche vorausgesetzt.</div></details>
       <details><summary>Was macht BIRK eigentlich?</summary><div class="faq__a">Wir sind Großhandel für Gebäudetechnik – Sanitär, Heizung, Lüftung und Klima. Unsere Kundschaft ist das Fachhandwerk der Region: Betriebe, die bei uns ihre Ware holen und auf unsere Beratung zählen. Seit 2014 gehört BIRK zur G.U.T. GRUPPE.</div></details>
-      <details><summary>Wo genau arbeite ich?</summary><div class="faq__a">In unserer Niederlassung in Rottweil, Rheinwaldstraße 10. Kurze Wege, festes Team, kein wechselnder Einsatzort.</div></details>
-      <details><summary>Wer sieht meine Daten?</summary><div class="faq__a">Nur die für das Recruiting zuständigen Personen bei BIRK. Deine Daten werden gemäß Art. 6 Abs. 1 lit. a DSGVO ausschließlich zur Bearbeitung deiner Bewerbung verwendet.</div></details>
+      <details><summary>Wo genau arbeite ich?</summary><div class="faq__a">In der Niederlassung Rottweil, Rheinwaldstraße 10.</div></details>
+      <details><summary>Wer sieht meine Daten?</summary><div class="faq__a">Deine Angaben werden an BIRK übermittelt und gemäß Art. 6 Abs. 1 lit. a DSGVO zur Bearbeitung deiner Bewerbung verwendet.</div></details>
     </div>
   </div>
 </section>
@@ -639,7 +638,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
     </div>
     <div class="footer__legal">
       <span>© 2026 BIRK – Alle Rechte vorbehalten.</span>
-      <span>Karriereseite von <a href="https://www.laendle-digital.com" target="_blank" rel="noopener">Ländle Digital</a></span>
+      
     </div>
   </div>
 </footer>
@@ -654,9 +653,13 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
      Livegang gegen die offiziellen Adressen pruefen.
      ===================================================================== */
   var CONFIG = {
-    mail:        "bewerbung@birk.de",
-    datenschutz: "https://www.gut-gruppe.de/datenschutz",
-    impressum:   "https://www.gut-gruppe.de/impressum",
+    /* LEER = noch nicht bestaetigt. Nichts hier wird geraten.
+       Sobald die echten Werte vorliegen, hier eintragen - die Seite
+       blendet Mail-Zeile und Rechtslinks automatisch ein.
+       Solange sie leer sind, werden die Elemente ausgeblendet. */
+    mail:        "",
+    datenschutz: "",
+    impressum:   "",
     firma:       "BIRK",
     standort:    "Rottweil",
     strasse:     "Rheinwaldstraße 10",
@@ -706,7 +709,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       teaser:"Warenannahme, Kommissionierung und Versand",
       hook:"Du sorgst dafür, dass unsere Fachhandwerkskunden ihre Ware pünktlich und vollständig bekommen.",
       aliase:["lager","lagerist","lagermitarbeiter","logistik","lagerlogistik"],
-      tags:["Vollzeit","Rottweil","Eintritt nach Absprache"],
+      tags:["Rottweil"],
       aufgaben:[
         "Warenannahme, Kontrolle und Einlagerung der eingehenden Lieferungen",
         "Kommissionieren der Aufträge für unsere Fachhandwerkskunden",
@@ -722,7 +725,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
         "Zuverlässige und sorgfältige Arbeitsweise",
         "Organisationstalent, Teamgeist und ein hohes Maß an Eigeninitiative",
         "Freude daran, mit anzupacken",
-        "Staplerschein von Vorteil – kann bei uns auch nachgeholt werden"
+        "Staplerschein von Vorteil"
       ],
       bieten:[
         "E-Bike-Leasing",
@@ -749,14 +752,14 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
             {v:"Nur wenige Wörter (A1-A2)", t:"Nur wenige Wörter", s:"A1–A2"}
           ]},
         { field:"staplerschein", label:"Staplerschein", pflicht:false,
-          h:"Hast du einen Staplerschein?", hint:"Kein Muss – wir ermöglichen ihn dir auch.",
+          h:"Hast du einen Staplerschein?", hint:"Kein Pflichtkriterium.",
           opts:[
             {v:"Ja, Staplerschein vorhanden", t:"Ja, vorhanden", ok:1},
             {v:"Nein, aber ich würde ihn gerne machen", t:"Noch nicht – würde ich machen"},
             {v:"Nein", t:"Nein"}
           ]},
         { field:"lagererfahrung", label:"Lagererfahrung", pflicht:false,
-          h:"Deine Erfahrung im Lager", hint:"Auch Quereinsteiger sind bei uns willkommen.",
+          h:"Deine Erfahrung im Lager", hint:"Kein Pflichtkriterium.",
           opts:[
             {v:"Mehrjährige Erfahrung in Lager, Logistik oder Großhandel", t:"Mehrjährige Erfahrung", s:"Lager, Logistik oder Großhandel", ok:1},
             {v:"Erste Erfahrung in Lager oder Logistik", t:"Erste Erfahrung", ok:1},
@@ -770,7 +773,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       teaser:"Technische Beratung und Verkauf für das Fachhandwerk",
       hook:"Du berätst unsere Fachhandwerkskunden technisch fundiert – und bringst Aufträge zum Abschluss.",
       aliase:["verkauf","vertrieb","innendienst","verkaeufer","verkäufer","technischer-verkauf"],
-      tags:["Vollzeit","Rottweil","Eintritt nach Absprache"],
+      tags:["Rottweil"],
       aufgaben:[
         "Technische Beratung und Verkauf in den Bereichen Sanitär, Heizung und Lüftung",
         "Betreuung und Ausbau unserer Fachhandwerkskunden",
@@ -826,7 +829,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
             {v:"Nein, Verkauf liegt mir nicht", t:"Nein, Verkauf liegt mir nicht"}
           ]},
         { field:"technikwissen", label:"Technisches Wissen", pflicht:false,
-          h:"Dein technisches Wissen", hint:"Wo du schon sicher bist – Lücken schließen wir mit Schulungen.",
+          h:"Dein technisches Wissen", hint:"Kein Pflichtkriterium – wo stehst du fachlich?",
           opts:[
             {v:"Sehr gutes Produktwissen in Sanitär, Heizung und Lüftung", t:"Sehr gutes Produktwissen", s:"Sanitär, Heizung und Lüftung", ok:1},
             {v:"Gutes Grundwissen in einem der Bereiche", t:"Gutes Grundwissen", s:"In einem der Bereiche", ok:1},
@@ -839,14 +842,14 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
     {
       key:"azubi", title:"Auszubildende (m/w/d)", kurz:"Ausbildung", icon:ICONS.azubi,
       teaser:"Dein Start ins Berufsleben – mit individueller Förderung",
-      hook:"Starte deine Ausbildung bei BIRK in Rottweil – mit individueller Förderung ab dem ersten Tag.",
+      hook:"Starte deine Ausbildung bei BIRK in Rottweil – mit individueller Förderung.",
       aliase:["azubi","ausbildung","auszubildende","auszubildender","lehre"],
-      tags:["Ausbildung","Rottweil","Start nach Absprache"],
+      tags:["Ausbildung","Rottweil"],
       aufgaben:[
         "Du lernst unsere Niederlassung von Grund auf kennen – vom Lager bis zum Verkauf",
         "Du wirst Schritt für Schritt in die Beratung unserer Fachhandwerkskunden eingebunden",
         "Du arbeitest von Anfang an im Team mit und übernimmst eigene Aufgaben",
-        "Du bekommst feste Ansprechpartner, die dich durch die ganze Ausbildung begleiten"
+        "Du lernst die Abläufe im Tagesgeschäft von Grund auf kennen"
       ],
       must:[
         "Ein Schulabschluss – vorhanden oder du machst ihn gerade",
@@ -859,7 +862,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
         "Freude daran, Verantwortung zu übernehmen"
       ],
       bieten:[
-        "Individuelle Förderung und feste Ansprechpartner",
+        "Individuelle Förderung",
         "Schulungen und Weiterbildungsmaßnahmen",
         "E-Bike-Leasing",
         "Weihnachts- und Urlaubsgeld sowie 30 Tage Urlaub",
@@ -891,7 +894,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
             {v:"Beides finde ich spannend", t:"Beides finde ich spannend", ok:1}
           ]},
         { field:"ausbildungsstart", label:"Ausbildungsstart", pflicht:false,
-          h:"Wann möchtest du starten?", hint:"Damit wir gleich richtig planen.",
+          h:"Wann möchtest du starten?", hint:"Kein Pflichtkriterium.",
           opts:[
             {v:"So bald wie möglich", t:"So bald wie möglich", ok:1},
             {v:"Zum nächsten Ausbildungsjahr", t:"Nächstes Ausbildungsjahr", ok:1},
@@ -909,12 +912,20 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
   /* ---------- Kontaktdaten / Rechts-Links aus CONFIG setzen ---------- */
   (function(){
     function set(id,fn){ var el=document.getElementById(id); if(el) fn(el); }
-    set("errMail",         function(el){ el.textContent=CONFIG.mail; });
-    set("linkMail",        function(el){ el.textContent=CONFIG.mail; el.href="mailto:"+CONFIG.mail+"?subject=Bewerbung%20bei%20"+encodeURIComponent(CONFIG.firma+" "+CONFIG.standort); });
-    set("linkMailFooter",  function(el){ el.textContent=CONFIG.mail; el.href="mailto:"+CONFIG.mail; });
-    set("linkDatenschutz", function(el){ el.href=CONFIG.datenschutz; });
-    set("linkDatenschutz2",function(el){ el.href=CONFIG.datenschutz; });
-    set("linkImpressum",   function(el){ el.href=CONFIG.impressum; });
+    /* Leere Werte -> Element verschwindet, statt auf eine geratene
+       Adresse zu zeigen. */
+    function wegOderSetzen(id, wert, anwenden, huelle){
+      var el=document.getElementById(id); if(!el) return;
+      if(!wert){ (huelle?el.closest(huelle):el).style.display="none"; return; }
+      anwenden(el, wert);
+    }
+    wegOderSetzen("errMail", CONFIG.mail, function(el,v){ el.textContent=v; });
+    wegOderSetzen("linkMail", CONFIG.mail, function(el,v){
+      el.textContent=v; el.href="mailto:"+v+"?subject=Bewerbung%20bei%20"+encodeURIComponent(CONFIG.firma+" "+CONFIG.standort); }, ".apply__contact");
+    wegOderSetzen("linkMailFooter", CONFIG.mail, function(el,v){ el.textContent=v; el.href="mailto:"+v; }, "li");
+    wegOderSetzen("linkDatenschutz",  CONFIG.datenschutz, function(el,v){ el.href=v; });
+    wegOderSetzen("linkDatenschutz2", CONFIG.datenschutz, function(el,v){ el.href=v; }, "li");
+    wegOderSetzen("linkImpressum",    CONFIG.impressum,   function(el,v){ el.href=v; }, "li");
   })();
 
   /* ---------- Original-Logo laden (Fallback: Schriftzug) ----------
@@ -986,7 +997,6 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
         "@type":"JobPosting", title:j.title,
         description:j.aufgaben.join(". ")+".",
         datePosted:today, validThrough:through,
-        employmentType: j.key==="azubi" ? "FULL_TIME" : "FULL_TIME",
         hiringOrganization:{"@type":"Organization",name:CONFIG.firma,sameAs:"https://www.gut-gruppe.de/unternehmen/birk"},
         jobLocation:{"@type":"Place",address:{"@type":"PostalAddress",streetAddress:CONFIG.strasse,addressLocality:CONFIG.standort,postalCode:CONFIG.plz,addressRegion:"BW",addressCountry:"DE"}},
         qualifications:j.must.join(", ")+".",
