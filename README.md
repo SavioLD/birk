@@ -55,8 +55,8 @@ Drei Punkte, alle umgesetzt:
 3. **Beide Aussagen stehen auf der Seite**, direkt untereinander in der
    Sektion „Warum BIRK":
    - Überschrift: **„BIRK – Ihr Gebäudetechnik-Großhandel."**
-   - darunter als Claim: **„Familienunternehmen in dritter Generation –
-     mit dem Rückhalt einer starken Gruppe."**
+   - darunter als Claim: **„Familiär geführtes Unternehmen in dritter
+     Generation – mit dem Rückhalt einer starken Gruppe."**
 
    Die zweite Zeile hatte ich zunächst als Ersatz für die erste gelesen und
    entfernt – es war eine Ergänzung. Nachgeholt am 14.10.2026. Beides steht
