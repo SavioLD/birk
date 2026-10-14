@@ -122,11 +122,18 @@ img{max-width:100%;display:block}
 .hero__reassure{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;font-weight:700;color:#cfdce8}
 .hero__reassure span{display:inline-flex;align-items:center;gap:7px}
 .hero__reassure svg{width:16px;height:16px;stroke:#ff8a9c}
+/* Mobil: Das Foto bekommt oben ein eigenes, helles Band und ist dadurch
+   sofort sichtbar. Erst darunter wird abgedunkelt, damit Logo, Headline
+   und Buttons weiterhin klar lesbar bleiben. */
 @media(max-width:820px){
+  .hero{padding:0}
   .hero__inner{min-height:0}
-  .hero__panel{flex:1 1 100%;max-width:none;padding:108px 22px 46px}
-  .hero__panel::before{inset:0;width:100%;border-radius:0;background:linear-gradient(180deg,rgba(0,26,46,.88) 0%,rgba(0,44,76,.93) 100%)}
-  .hero__media::after{background:linear-gradient(180deg,rgba(0,20,36,.22),rgba(0,20,36,.58))}
+  .hero__media{inset:0 0 auto 0;height:320px;background-position:70% 50%}
+  .hero__media::after{background:linear-gradient(180deg,rgba(0,18,33,.04) 0%,rgba(0,18,33,.08) 58%,rgba(0,22,40,.26) 80%,rgba(0,28,50,.78) 93%,rgba(0,34,61,1) 99%,rgba(0,34,61,1) 100%)}
+  .hero__panel{flex:1 1 100%;max-width:none;padding:206px 22px 96px}
+  .hero__panel>*{text-shadow:0 1px 16px rgba(0,14,26,.70)}
+  .hero__panel::before{inset:0 -50vw;width:auto;border-radius:0;box-shadow:none;background:linear-gradient(180deg,rgba(0,24,43,0) 0,rgba(0,24,43,0) 234px,rgba(0,26,46,.30) 282px,rgba(0,28,50,.78) 316px,rgba(0,30,54,.95) 352px,rgba(0,46,80,.95) 100%)}
+  .hero__logo img{box-shadow:0 16px 40px rgba(0,16,30,.50)}
 }
 
 /* ---------- trust band ---------- */

@@ -165,9 +165,35 @@ die Seite bricht nicht.
 ### Hero-Abdunklung
 
 Über dem Hero-Foto liegt ein Scrim (`.hero__media::after`), damit die Headline
-auf jedem Motiv lesbar bleibt. Nachgemessen mit dem aktuellen Foto:
-**11,2:1 im schwächsten Punkt** (Desktop), 13,7:1 mobil – beides klar über
-WCAG AA. Bei einem deutlich helleren Motiv den ersten Stop des Scrims erhöhen.
+auf jedem Motiv lesbar bleibt.
+
+**Desktop** (ab 821px): Das Foto läuft über die volle Hero-Fläche, der Scrim
+dunkelt von links nach rechts ab.
+
+**Handy und Tablet** (bis 820px): Das Foto steht in einem eigenen Band von
+320px Höhe ganz oben und ist dort fast unabgedunkelt zu sehen. Erst darunter
+– ab ca. 234px, also unterhalb der Logo-Platte – wird abgedunkelt, damit
+Headline, Buttons und Fließtext klar lesbar bleiben. Das Band verläuft an
+seiner Unterkante exakt in die Hero-Farbe `--dark`, deshalb ist keine Kante
+sichtbar. Drei Stellschrauben, falls das Motiv wechselt:
+
+| Was | Wo | Wirkung |
+|---|---|---|
+| `height` von `.hero__media` | Mobile-Query | wie hoch das Foto steht |
+| `background-position` | Mobile-Query (aktuell `70% 50%`) | welcher Bildausschnitt im Hochformat sichtbar ist |
+| erste Stops von `.hero__panel::before` | Mobile-Query | ab welcher Höhe abgedunkelt wird |
+
+Nachgemessen mit dem aktuellen Foto, jeweils der schwächste Punkt:
+
+| Viewport | Kicker | Headline | Fließtext | Haken-Zeile |
+|---|---|---|---|---|
+| 1440px | 5,2:1 | 11,9:1 | 10,0:1 | 12,8:1 |
+| 768px | 11,4:1 | 16,4:1 | 13,1:1 | 10,6:1 |
+| 390px | 11,5:1 | 16,4:1 | 13,3:1 | 10,5:1 |
+| 320px | 11,5:1 | 16,6:1 | 13,4:1 | – |
+
+WCAG AA verlangt 4,5:1. Bei einem deutlich helleren Motiv den ersten Stop des
+Scrims erhöhen.
 
 ## Logo
 
