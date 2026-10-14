@@ -1,25 +1,29 @@
 BILDMATERIAL
 ============
 
-Die Seite sucht die Dateien automatisch ueber ihren Namen. Austauschen
-heisst: gleiche Datei ueberschreiben, committen, pushen. Nichts im Code
-aendern.
+Die Seite sucht die Dateien ueber ihren Namen. Ablegen, committen, pushen -
+fertig. Nichts im Code aendern.
+
+WICHTIG
+  Die bisherigen Fotos wurden entfernt: sie zeigten nicht den Standort
+  Rottweil und nicht die eigene Ausstellung (Rueckmeldung BIRK, 14.10.2026).
+  Es werden ausschliesslich Aufnahmen aus Rottweil verwendet.
 
 IM EINSATZ
   logo.png                     Logo, freigestellt (Header, Hero, Footer)
-  hero.jpg                     grosses Bild im Kopfbereich
-  einblick-beratung.jpg        Galerie 1 - Gespraech
-  einblick-badausstellung.jpg  Galerie 2 - Badausstellung
+
+WIRD GESUCHT - SOBALD DA, ERSCHEINT ES AUTOMATISCH
+  hero.jpg                     grosses Bild im Kopfbereich, quer,
+                               mind. 1920 x 1080 px. Fehlt es, bleibt der
+                               blaue Verlauf stehen.
+  einblick-beratung.jpg        Galerie 1
+  einblick-badausstellung.jpg  Galerie 2
+                               Fehlen beide, verschwindet die Galerie ganz.
+
+BESONDERS GEBRAUCHT
+  Lueftung      fuer die neue Lueftungsabteilung gibt es noch kein Bild
+  Lager         Regale, Kommissionierung, Stapler, Warenausgang
+  Standort      Aussenansicht Rheinwaldstrasse 10, Team bei der Arbeit
 
 ORIGINAL (nicht auf der Seite)
   logo-original.jpg            hochgeladene Logo-Datei
-
-OPTIONAL ERGAENZEN
-  logo-quer.png                quer liegende Logo-Variante, falls vorhanden.
-                               Wirkt im Header ruhiger als das gestapelte.
-
-WAS NOCH FEHLT
-  Fuer die Lager-Stelle gibt es bislang kein einziges Bild. Hilfreich
-  waeren: Lager und Regale, Kommissionierung, Stapler, Fuhrpark,
-  Warenausgang, Team bei der Arbeit, Aussenansicht der Niederlassung.
-  Je mehr echtes Material, desto besser werden auch die Creatives.

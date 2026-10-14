@@ -31,21 +31,29 @@ vor, offen sind nur noch Mail-Adresse und Rechts-Links:
 | CI-Rot | `#dd042b` | ✅ verbindlich vom Kunden |
 | Logo | `bilder/logo.png` | ✅ Original, freigestellt – Farben unverändert |
 | Schrift | Barlow | technisch-industrieller Charakter, DIN-nah; kein Styleguide verfügbar |
-| Hero-Foto | `bilder/hero.jpg` | ✅ Halle mit roter Wand |
-| Einblick-Galerie | 2 Fotos | ✅ Gespräch, Badausstellung |
+| Hero-Foto | fehlt | ⚠️ entfernt, siehe Rückmeldung BIRK |
+| Einblick-Galerie | fehlt | ⚠️ entfernt, blendet sich selbst aus |
 | Bewerbungs-Mail | `bewerbung@birk.de` | ⚠️ Annahme (Domain verifiziert, Postfach nicht) |
 | Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | ⚠️ Annahme |
 | Standort-Adresse | Rheinwaldstraße 10, 78628 Rottweil | ✅ extern bestätigt (ELEMENTS Rottweil) |
-| Ort des Badausstellungs-Fotos | bewusst nicht benannt | ⚠️ nicht überprüfbar, s. u. |
+| Verkaufsstelle | ausdrücklich Lüftung | ✅ Rückmeldung BIRK 14.10.2026 |
 
-### Bildunterschriften
+### Rückmeldung BIRK vom 14.10.2026
 
-Birk betreibt Badausstellungen in **Nürtingen, Rottweil und Heidenheim**.
-Welche davon auf `einblick-badausstellung.jpg` zu sehen ist, liess sich nicht
-feststellen: die Datei enthält keine EXIF-Daten, und `birk.de` sowie
-`gut-gruppe.de` sind aus der Build-Umgebung nicht erreichbar. Die
-Bildunterschrift nennt deshalb **keinen Ort**. Wer es sicher weiss, kann sie
-in `index.html` ergänzen.
+Drei Punkte, alle umgesetzt:
+
+1. **Die Verkaufsstelle war zu neutral.** Gesucht wird ausdrücklich für die
+   **Lüftung** – nicht Sanitär, nicht Heizung – und die Abteilung wird in
+   Rottweil **neu aufgebaut**. Titel, Aufgaben, Profil und zwei
+   Screening-Fragen sind darauf umgestellt.
+2. **Die Fotos zeigten nicht Rottweil** und nicht die eigene Ausstellung.
+   Alle drei wurden gelöscht. Hero und Galerie blenden sich aus, solange
+   keine Dateien da sind – neue Bilder unter demselben Namen ablegen, dann
+   erscheinen sie automatisch wieder.
+3. **„Familienunternehmen in dritter Generation – mit dem Rückhalt einer
+   starken Gruppe"** ist ersetzt durch **„BIRK – Ihr Gebäudetechnik-
+   Großhandel"**. Die Aussage zur dritten Generation steht jetzt nirgends
+   mehr auf der Seite.
 
 Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 `<script>` am Seitenende – dort einmal ändern, die ganze Seite zieht nach.
