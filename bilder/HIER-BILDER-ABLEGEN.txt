@@ -1,29 +1,27 @@
 BILDMATERIAL
 ============
 
-Die Seite sucht die Dateien ueber ihren Namen. Ablegen, committen, pushen -
-fertig. Nichts im Code aendern.
+Die Seite sucht die Dateien ueber ihren Namen. Austauschen heisst: gleiche
+Datei ueberschreiben, committen, pushen. Nichts im Code aendern.
 
-WICHTIG
-  Die bisherigen Fotos wurden entfernt: sie zeigten nicht den Standort
-  Rottweil und nicht die eigene Ausstellung (Rueckmeldung BIRK, 14.10.2026).
-  Es werden ausschliesslich Aufnahmen aus Rottweil verwendet.
-
-IM EINSATZ
+AUF DER SEITE
   logo.png                     Logo, freigestellt (Header, Hero, Footer)
+  hero.jpg                     Kopfbereich - Fuhrpark am Standort
+  einblick-verkauf.jpg         Galerie 1 - Arbeitsplatz Verkauf
+  einblick-ausbildung.jpg      Galerie 2 - Auszubildende am Katalog
+  einblick-badausstellung.jpg  Galerie 3 - Badausstellung
 
-WIRD GESUCHT - SOBALD DA, ERSCHEINT ES AUTOMATISCH
-  hero.jpg                     grosses Bild im Kopfbereich, quer,
-                               mind. 1920 x 1080 px. Fehlt es, bleibt der
-                               blaue Verlauf stehen.
-  einblick-beratung.jpg        Galerie 1
-  einblick-badausstellung.jpg  Galerie 2
-                               Fehlen beide, verschwindet die Galerie ganz.
+  Fehlt eine Galerie-Datei, faellt nur diese Kachel weg. Fehlen alle,
+  verschwindet die Galerie ganz. Fehlt hero.jpg, bleibt der blaue
+  Verlauf stehen. Die Seite bricht in keinem Fall.
 
-BESONDERS GEBRAUCHT
-  Lueftung      fuer die neue Lueftungsabteilung gibt es noch kein Bild
-  Lager         Regale, Kommissionierung, Stapler, Warenausgang
-  Standort      Aussenansicht Rheinwaldstrasse 10, Team bei der Arbeit
-
-ORIGINAL (nicht auf der Seite)
+ORIGINALE (nicht auf der Seite, voller Bildausschnitt fuer Creatives)
+  original-fuhrpark.jpg        quer
+  original-verkauf.jpg         quer
+  original-ausbildung.jpg      quer
+  original-ausstellung.jpg     hoch - gut fuer 4:5 und 9:16
   logo-original.jpg            hochgeladene Logo-Datei
+
+NOCH GESUCHT
+  Lueftung   Fuer die neue Lueftungsabteilung gibt es noch kein Bild.
+  Lager      Regale, Kommissionierung, Stapler, Warenausgang.

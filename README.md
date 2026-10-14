@@ -31,8 +31,8 @@ vor, offen sind nur noch Mail-Adresse und Rechts-Links:
 | CI-Rot | `#dd042b` | ✅ verbindlich vom Kunden |
 | Logo | `bilder/logo.png` | ✅ Original, freigestellt – Farben unverändert |
 | Schrift | Barlow | technisch-industrieller Charakter, DIN-nah; kein Styleguide verfügbar |
-| Hero-Foto | fehlt | ⚠️ entfernt, siehe Rückmeldung BIRK |
-| Einblick-Galerie | fehlt | ⚠️ entfernt, blendet sich selbst aus |
+| Hero-Foto | `bilder/hero.jpg` | ✅ Fuhrpark am Standort |
+| Einblick-Galerie | 3 Fotos | ✅ Verkauf, Ausbildung, Badausstellung |
 | Bewerbungs-Mail | `bewerbung@birk.de` | ⚠️ Annahme (Domain verifiziert, Postfach nicht) |
 | Impressum / Datenschutz | `gut-gruppe.de/impressum` bzw. `/datenschutz` | ⚠️ Annahme |
 | Standort-Adresse | Rheinwaldstraße 10, 78628 Rottweil | ✅ extern bestätigt (ELEMENTS Rottweil) |
@@ -47,9 +47,11 @@ Drei Punkte, alle umgesetzt:
    Rottweil **neu aufgebaut**. Titel, Aufgaben, Profil und zwei
    Screening-Fragen sind darauf umgestellt.
 2. **Die Fotos zeigten nicht Rottweil** und nicht die eigene Ausstellung.
-   Alle drei wurden gelöscht. Hero und Galerie blenden sich aus, solange
-   keine Dateien da sind – neue Bilder unter demselben Namen ablegen, dann
-   erscheinen sie automatisch wieder.
+   Alle drei wurden gelöscht und durch vier eigene Aufnahmen von BIRK
+   ersetzt: Fuhrpark (Hero), Arbeitsplatz Verkauf, Auszubildende am
+   Katalog und die Badausstellung. Hero und Galerie blenden sich weiterhin
+   aus, solange eine Datei fehlt – neue Bilder unter demselben Namen
+   ablegen, dann erscheinen sie automatisch wieder.
 3. **„Familienunternehmen in dritter Generation – mit dem Rückhalt einer
    starken Gruppe"** ist ersetzt durch **„BIRK – Ihr Gebäudetechnik-
    Großhandel"**. Die Aussage zur dritten Generation steht jetzt nirgends

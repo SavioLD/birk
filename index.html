@@ -188,13 +188,15 @@ section[id],.form-card{scroll-margin-top:90px}
 .perks li svg{width:19px;height:19px;stroke:var(--blue);flex:0 0 auto;margin-top:2px}
 
 /* ---------- Einblick-Galerie ---------- */
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:22px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:22px}
 .gallery[data-count="1"]{grid-template-columns:minmax(0,620px)}
-@media(max-width:620px){.gallery{grid-template-columns:1fr}}
+.gallery[data-count="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:940px){.gallery,.gallery[data-count="2"],.gallery[data-count="3"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.gallery,.gallery[data-count="1"],.gallery[data-count="2"],.gallery[data-count="3"]{grid-template-columns:1fr}}
 .shot{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 /* Feste Bildhoehe: quer- und hochformatige Fotos stehen trotzdem sauber
    nebeneinander, und es gibt keinen Layout-Sprung beim Nachladen. */
-.shot img{width:100%;height:290px;object-fit:cover;display:block;background:var(--panel-2)}
+.shot img{width:100%;height:270px;object-fit:cover;display:block;background:var(--panel-2)}
 .shot figcaption{padding:14px 17px;font-size:14px;font-weight:600;color:var(--ink-soft);line-height:1.45}
 @media(max-width:620px){.shot img{height:215px}}
 
@@ -474,12 +476,16 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
          stehen - die Seite bricht nicht. -->
     <div class="gallery">
       <figure class="shot reveal">
-        <img src="bilder/einblick-beratung.jpg" alt="Zwei Kollegen im Gespräch an einem Besprechungstisch" loading="lazy" decoding="async" />
-        <figcaption>Beratung und Austausch gehören bei BIRK zum Arbeitsalltag.</figcaption>
+        <img src="bilder/einblick-verkauf.jpg" alt="Mitarbeiterin mit Headset am Arbeitsplatz im Verkauf" loading="lazy" decoding="async" />
+        <figcaption>Im Verkauf sind wir die Stimme, die unsere Fachhandwerkskunden als Erstes hören.</figcaption>
       </figure>
       <figure class="shot reveal">
-        <img src="bilder/einblick-badausstellung.jpg" alt="Blick in eine Badausstellung mit freistehender Badewanne" loading="lazy" decoding="async" />
-        <figcaption>In unserer Badausstellung beraten wir Fachhandwerk und Bauherren.</figcaption>
+        <img src="bilder/einblick-ausbildung.jpg" alt="Zwei Auszubildende arbeiten gemeinsam an einem Katalog" loading="lazy" decoding="async" />
+        <figcaption>Das Sortiment lernt man am besten gemeinsam – Einarbeitung heißt bei uns genau das.</figcaption>
+      </figure>
+      <figure class="shot reveal">
+        <img src="bilder/einblick-badausstellung.jpg" alt="Badausstellung mit freistehender Badewanne und Duschbereich" loading="lazy" decoding="async" />
+        <figcaption>Unsere Badausstellung in Rottweil – hier beraten wir Fachhandwerk und Bauherren.</figcaption>
       </figure>
     </div>
   </div>
