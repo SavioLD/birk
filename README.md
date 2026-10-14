@@ -52,10 +52,15 @@ Drei Punkte, alle umgesetzt:
    Katalog und die Badausstellung. Hero und Galerie blenden sich weiterhin
    aus, solange eine Datei fehlt – neue Bilder unter demselben Namen
    ablegen, dann erscheinen sie automatisch wieder.
-3. **„Familienunternehmen in dritter Generation – mit dem Rückhalt einer
-   starken Gruppe"** ist ersetzt durch **„BIRK – Ihr Gebäudetechnik-
-   Großhandel"**. Die Aussage zur dritten Generation steht jetzt nirgends
-   mehr auf der Seite.
+3. **Beide Aussagen stehen auf der Seite**, direkt untereinander in der
+   Sektion „Warum BIRK":
+   - Überschrift: **„BIRK – Ihr Gebäudetechnik-Großhandel."**
+   - darunter als Claim: **„Familienunternehmen in dritter Generation –
+     mit dem Rückhalt einer starken Gruppe."**
+
+   Die zweite Zeile hatte ich zunächst als Ersatz für die erste gelesen und
+   entfernt – es war eine Ergänzung. Nachgeholt am 14.10.2026. Beides steht
+   zusätzlich in der FAQ-Antwort „Was macht BIRK eigentlich?".
 
 Mail-Adresse und Rechts-Links stehen gesammelt im `CONFIG`-Objekt ganz oben im
 `<script>` am Seitenende – dort einmal ändern, die ganze Seite zieht nach.
