@@ -56,5 +56,10 @@ node tools/creatives-export.mjs v-a  # oder einzeln
 | `a-b` | Ausbildung · Feed · Leistungen |
 | `a-c` | Ausbildung · Story |
 
-Die Story-Motive halten oben 250 px und unten 380 px frei, damit die
+Die Story-Motive halten oben 250 px und unten 300 px frei, damit die
 Bedienelemente von Instagram und Facebook nichts überdecken.
+
+**Aufbau der Story-Motive:** Foto bis 1020 px, darüber Kicker und drei
+Fakten-Chips, darunter die Stellenbezeichnung als Headline, ein Satz
+dazu und der Button. Die Stellenbezeichnung ist bewusst das größte
+Element – damit beim Durchwischen sofort klar ist, worum es geht.
