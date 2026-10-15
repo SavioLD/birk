@@ -3,9 +3,11 @@
 # Testeintrag an die Lead-Table-Kacheln schicken.
 #
 #   ./tools/webhook-test.sh verkauf
-#   ./tools/webhook-test.sh lager
 #   ./tools/webhook-test.sh azubi
-#   ./tools/webhook-test.sh alle
+#   ./tools/webhook-test.sh alle     -> nur die aktiven Stellen
+#   ./tools/webhook-test.sh lager    -> nur auf Zuruf; die Stelle ist
+#                                       deaktiviert, die Seite sendet
+#                                       nichts mehr an diese Kachel
 #
 # Sendet exakt denselben Payload, den die Karriereseite auch sendet -
 # gleiche Feldnamen, gleiche Reihenfolge, jedes Feld genau einmal.
@@ -63,10 +65,10 @@ JSON
 
 case "${1:-alle}" in
   verkauf) send "VERKAUF" "$VERKAUF" "$j_verkauf" ;;
-  lager)   send "LAGER"   "$LAGER"   "$j_lager"   ;;
+  lager)   echo "Hinweis: Die Stelle Lager ist auf der Seite deaktiviert."
+           send "LAGER"   "$LAGER"   "$j_lager"   ;;
   azubi)   send "AZUBI"   "$AZUBI"   "$j_azubi"   ;;
   alle)    send "VERKAUF" "$VERKAUF" "$j_verkauf"
-           send "LAGER"   "$LAGER"   "$j_lager"
            send "AZUBI"   "$AZUBI"   "$j_azubi"   ;;
   *) echo "Nutzung: $0 [verkauf|lager|azubi|alle]"; exit 1 ;;
 esac

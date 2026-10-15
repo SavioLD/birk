@@ -2,8 +2,13 @@
 
 Recruiting-Landingpage für die **Niederlassung Rottweil** der BIRK
 (Gebäudetechnik-Großhandel, Teil der G.U.T. GRUPPE).
-Ausgeschriebene Stellen: **Lager**, **Verkauf** und **Ausbildung** (m/w/d) –
-und ausschließlich diese drei.
+Ausgeschriebene Stellen: **Verkauf Lüftung** und **Ausbildung** (m/w/d) –
+und ausschließlich diese zwei.
+
+> **Lager ist seit dem 15.10.2026 auf Kundenwunsch deaktiviert.** Der
+> komplette Eintrag steht weiter in der Config, nur mit `aktiv:false`.
+> Zum Wiedereinschalten genügt `aktiv:true` – siehe
+> [Stellen pflegen](#stellen-pflegen).
 
 ## Inhalt
 
@@ -94,7 +99,8 @@ Die im Briefing genannten K.-o.-Kriterien decken sich **wörtlich** mit dem
 Profil dieser Stellenanzeige – das Briefing war also korrekt.
 
 ### 3. Mein Entwurf – braucht Freigabe von BIRK
-Die **Aufgaben- und Profil-Listen von Lager und Ausbildung**. Für diese beiden
+Die **Aufgaben- und Profil-Listen von Lager (zurzeit deaktiviert) und
+Ausbildung**. Für diese beiden
 Stellen gibt es keine veröffentlichte Anzeige, deshalb sind das
 branchenübliche Formulierungen, keine Angaben von BIRK. Ebenso die
 **Screening-Fragen** von Lager und Ausbildung – das Briefing hat dafür
@@ -216,7 +222,7 @@ als das gestapelte Signet.
 
 ## Stellen pflegen
 
-Alle drei Stellen stehen in **einer** Config (`var JOBS` im `<script>` am
+Alle Stellen stehen in **einer** Config (`var ALLE_STELLEN` im `<script>` am
 Seitenende). Sie speist gleichzeitig:
 
 - die Stellenkarten in der Sektion „Offene Stellen"
@@ -227,8 +233,32 @@ Seitenende). Sie speist gleichzeitig:
 
 Eine Stelle ändern heißt also: **einen** Eintrag anfassen.
 
+### Eine Stelle an- oder abschalten
+
 ```js
-{ key:"verkauf", title:"Mitarbeiter Verkauf (m/w/d)", kurz:"Verkauf",
+var JOBS = ALLE_STELLEN.filter(function(j){ return j.aktiv !== false; });
+```
+
+`aktiv:false` nimmt die Stelle **vollständig** von der Seite: keine
+Stellenkachel, keine Auswahl im Formular, keine Structured Data, kein
+Deeplink und kein Webhook-Versand. Texte, Fragen und Webhook-URL bleiben
+im Code stehen.
+
+Aktueller Stand:
+
+| Stelle | `aktiv` |
+|---|---|
+| Lager | `false` – auf Kundenwunsch pausiert (15.10.2026) |
+| Verkauf Lüftung | `true` |
+| Ausbildung | `true` |
+
+Beim Abschalten mitdenken: die Zähler im Text (`<title>`, Meta-Description,
+og-Tags, Hero-Absatz, Überschrift „Zwei Stellen. Ein Team.") stehen als
+Fließtext in der Seite und ändern sich nicht automatisch mit.
+
+```js
+{ aktiv:true,
+  key:"verkauf", title:"Mitarbeiter Verkauf Lüftung (m/w/d)", kurz:"Verkauf Lüftung",
   teaser:"…",            // Einzeiler unter dem Titel im Formular
   hook:"…",              // Hero-Text bei ?stelle=verkauf
   aliase:["verkauf", …], // weitere Schreibweisen für den Deeplink
@@ -240,10 +270,13 @@ Eine Stelle ändern heißt also: **einen** Eintrag anfassen.
 ### Deeplinks für die Anzeigen
 
 ```
-https://saviold.github.io/birk/?stelle=lager
 https://saviold.github.io/birk/?stelle=verkauf
 https://saviold.github.io/birk/?stelle=azubi
 ```
+
+`?stelle=lager` zeigt, solange die Stelle deaktiviert ist, einfach die
+normale Seite mit beiden aktiven Stellen – alte Anzeigenlinks laufen also
+nicht ins Leere.
 
 Der Auswahl-Schritt entfällt dann komplett (ein Schritt weniger), und der
 Hero wird auf die Stelle getextet.
@@ -257,12 +290,12 @@ Hero wird auf die Stelle getextet.
 Jede Stelle hat **eigene Fragen**, weil sich die K.-o.-Kriterien
 unterscheiden – eine abgeschlossene Ausbildung als Pflichtkriterium würde
 bei der Ausbildungsstelle jede gültige Bewerbung aussortieren.
-Alle drei Stellen haben **4 Fragen**, die Schrittzahl ist dadurch immer gleich
+Alle Stellen haben **4 Fragen**, die Schrittzahl ist dadurch immer gleich
 (6 Schritte, bzw. 5 beim Deeplink).
 
 | Stelle | Frage | Kategorie |
 |---|---|---|
-| **Lager** | Art der Tätigkeit (körperlich aktiv) | **Pflicht** |
+| **Lager** *(deaktiviert)* | Art der Tätigkeit (körperlich aktiv) | **Pflicht** |
 | | Deutschkenntnisse | **Pflicht** |
 | | Staplerschein | optional |
 | | Lagererfahrung | optional |
@@ -315,9 +348,13 @@ Jede Stelle schreibt in ihre **eigene Kachel**:
 
 | Stelle | tableID |
 |---|---|
-| Lager | `6ac4ab5d44c0b238e9e395d6` |
+| Lager *(deaktiviert – bekommt keine neuen Bewerbungen)* | `6ac4ab5d44c0b238e9e395d6` |
 | Verkauf | `6ac4ab4cd635372441581df2` |
 | Ausbildung | `6ac4ab66d635372441584187` |
+
+Die Lager-Kachel bleibt in der Lead Table bewusst bestehen: Die Seite sendet
+nichts mehr dorthin, die bereits eingegangenen Bewerbungen bleiben erhalten,
+und beim Wiedereinschalten der Stelle läuft sie ohne neue Einrichtung weiter.
 
 Gesendet wird **ausschließlich** bei einer vollständigen, qualifizierten
 Bewerbung. K.-o.-Abbrüche verlassen die Seite nie.
