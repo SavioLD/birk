@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>BIRK Rottweil – Creatives Verkauf Lüftung &amp; Ausbildung</title>
+<!--
+  Quelldatei für die Anzeigenmotive. Jede .board-Box wird 1:1 in der
+  angegebenen Pixelgroesse exportiert: node tools/creatives-export.mjs
+
+  Aufbau: Foto-Band oben, Textflaeche unten. Die BIRK-Fotos sind 4:3,
+  ein randloser 4:5- oder 9:16-Rahmen wuerde sie unbrauchbar zoomen.
+  Fotos ausschliesslich aus ../bilder/ - keine Stockbilder.
+  Farben: Blau #00508e, Rot #dd042b (CI, verbindlich).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --blau:#00508e; --blau-tief:#003a68; --dunkel:#00223d; --rot:#dd042b;
+    --hell:#b8d2e9; --rosa:#ffc6cf;
+    --cond:"Barlow Condensed","Barlow",system-ui,sans-serif;
+    --body:"Barlow",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#e9eef4;font-family:var(--body);padding:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+
+  .board{position:relative;overflow:hidden;color:#fff;flex:0 0 auto;background:var(--dunkel)}
+  .board--feed {width:1080px;height:1350px}
+  .board--story{width:1080px;height:1920px}
+
+  /* ---------- Foto-Band ---------- */
+  .band{position:absolute;left:0;right:0;top:0;overflow:hidden}
+  .band .foto{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat}
+  .band .verlauf{position:absolute;inset:0}
+
+  /* ---------- Kopfzeile ueber dem Foto ---------- */
+  .kopf{position:absolute;left:0;right:0;display:flex;align-items:flex-start;justify-content:space-between;gap:28px;z-index:2}
+  .platte{background:#fff;border-radius:20px;padding:17px 23px;display:flex;box-shadow:0 18px 44px rgba(0,16,30,.38)}
+  .platte img{height:92px;width:auto;display:block}
+  .ort{background:var(--rot);color:#fff;font-family:var(--cond);font-weight:600;font-size:29px;letter-spacing:.15em;text-transform:uppercase;padding:13px 22px;border-radius:8px;white-space:nowrap;margin-top:6px}
+
+  /* ---------- Textflaeche ---------- */
+  .text{position:absolute;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:space-between}
+  .kicker{display:inline-flex;align-items:center;gap:14px;font-family:var(--cond);font-weight:600;font-size:32px;letter-spacing:.15em;text-transform:uppercase;color:var(--rosa)}
+  .kicker .punkt{width:15px;height:15px;border-radius:50%;background:var(--rot);box-shadow:0 0 0 7px rgba(221,4,43,.26);flex:0 0 auto}
+  .kicker--blau{color:var(--rot)}
+  h1{font-family:var(--cond);font-weight:700;letter-spacing:-.005em;line-height:1.0;font-size:94px}
+  h1.klein{font-size:82px}
+  .rolle{font-size:37px;font-weight:600;line-height:1.3;color:#d4e3f0}
+  .rolle--blau{color:#4a6782}
+
+  .liste{list-style:none;display:flex;flex-direction:column;gap:17px}
+  .liste li{display:flex;gap:17px;align-items:flex-start;font-size:36px;font-weight:600;line-height:1.2}
+  .liste .hk{color:var(--rot);font-weight:700;flex:0 0 auto;line-height:1}
+
+  .cta{display:inline-flex;align-items:center;gap:16px;background:var(--rot);color:#fff;font-family:var(--cond);font-weight:700;font-size:42px;padding:22px 38px;border-radius:13px}
+  .cta--weiss{background:#fff;color:var(--blau)}
+  .fuss{font-family:var(--cond);font-weight:600;font-size:27px;letter-spacing:.11em;text-transform:uppercase;color:#8fb4d4}
+  .fuss--blau{color:#7a8ea1}
+</style>
+</head>
+<body>
+
+<!-- ======================= V-A · Verkauf · Feed 4:5 · Foto ================ -->
+<div class="board board--feed" id="v-a">
+  <div class="band" style="height:720px">
+    <div class="foto" style="background-image:url('../bilder/einblick-verkauf.jpg');background-position:50% 38%"></div>
+    <div class="verlauf" style="background:linear-gradient(180deg,rgba(0,20,36,.50) 0%,rgba(0,20,36,.10) 22%,rgba(0,20,36,.06) 58%,rgba(0,26,46,.58) 86%,rgba(0,34,61,1) 100%)"></div>
+  </div>
+  <div class="kopf" style="top:62px;padding:0 70px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div class="text" style="height:630px;padding:0 74px 62px;background:linear-gradient(180deg,rgba(0,34,61,0) 0,var(--dunkel) 40px,#002c50 100%)">
+    <div></div>
+    <div>
+      <span class="kicker"><span class="punkt"></span>Neue Abteilung in Rottweil</span>
+      <h1 style="margin:22px 0 0">Deine Abteilung:<br />Lüftung.</h1>
+      <p class="rolle" style="margin-top:24px">Mitarbeiter Verkauf Lüftung (m/w/d)<br />Vollzeit · Niederlassung Rottweil</p>
+      <div style="margin-top:34px"><span class="cta">In 60 Sekunden bewerben &rsaquo;</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= V-B · Verkauf · Feed 4:5 · Leistungen =========
+     Bewusst ohne Foto: Das Fuhrpark-Motiv traegt die Aufschrift
+     "BAD / HEIZUNG / ENERGIE" - fuer die Lueftungsstelle irrefuehrend.
+     Rein typografisch, dadurch zugleich ein zweites Format fuer den
+     A/B-Test gegen das Foto-Motiv.                                      -->
+<div class="board board--feed" id="v-b" style="background:linear-gradient(158deg,#00223d 0%,#003a68 52%,#00508e 100%)">
+  <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(48deg,rgba(255,255,255,.045) 0 22px,transparent 22px 44px)"></div>
+  <div class="kopf" style="top:62px;padding:0 70px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div style="position:absolute;left:0;right:0;top:210px;bottom:150px;padding:0 74px;display:flex;flex-direction:column;justify-content:center">
+    <span class="kicker"><span class="punkt"></span>Neue Abteilung in Rottweil</span>
+    <h1 style="margin:22px 0 0">Verkauf Lüftung<br />(m/w/d)</h1>
+    <p class="rolle" style="margin-top:22px">Vollzeit · Niederlassung Rottweil</p>
+    <div style="height:4px;width:160px;background:var(--rot);border-radius:3px;margin:44px 0 42px"></div>
+    <ul class="liste">
+      <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Eigene Abteilung, die du von Anfang an mitgestaltest</span></li>
+      <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>E-Bike-Leasing und Firmenfitness</span></li>
+      <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Weihnachts- und Urlaubsgeld, 30 Tage Urlaub</span></li>
+      <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Schulungen und Weiterbildung</span></li>
+    </ul>
+    <div style="margin-top:62px"><span class="cta">Jetzt bewerben &rsaquo;</span></div>
+  </div>
+  <span class="fuss" style="position:absolute;right:74px;bottom:66px;text-align:right">Ohne Lebenslauf<br />Ohne Anschreiben</span>
+</div>
+
+<!-- ======================= V-C · Verkauf · Story 9:16 =====================
+     Safe Zone: oben 250 px, unten 380 px bleiben ohne Kernaussage.        -->
+<div class="board board--story" id="v-c">
+  <div class="band" style="height:980px">
+    <div class="foto" style="background-image:url('../bilder/einblick-verkauf.jpg');background-position:50% 34%"></div>
+    <div class="verlauf" style="background:linear-gradient(180deg,rgba(0,20,36,.58) 0%,rgba(0,20,36,.14) 28%,rgba(0,20,36,.06) 62%,rgba(0,26,46,.56) 88%,rgba(0,34,61,1) 100%)"></div>
+  </div>
+  <div class="kopf" style="top:262px;padding:0 78px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div class="text" style="height:940px;padding:0 78px 380px;background:linear-gradient(180deg,rgba(0,34,61,0) 0,var(--dunkel) 40px,#002c50 62%,#002c50 100%)">
+    <div></div>
+    <div>
+      <span class="kicker"><span class="punkt"></span>Neue Abteilung in Rottweil</span>
+      <h1 style="margin:22px 0 0">Deine Abteilung:<br />Lüftung.</h1>
+      <p class="rolle" style="margin-top:24px">Mitarbeiter Verkauf Lüftung (m/w/d)<br />Vollzeit · Niederlassung Rottweil</p>
+      <div style="margin-top:34px"><span class="cta">In 60 Sekunden bewerben &rsaquo;</span></div>
+      <p class="fuss" style="margin-top:28px">Ohne Lebenslauf · Ohne Anschreiben</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= A-A · Ausbildung · Feed 4:5 · Foto ============= -->
+<div class="board board--feed" id="a-a">
+  <div class="band" style="height:720px">
+    <div class="foto" style="background-image:url('../bilder/einblick-ausbildung.jpg');background-position:50% 32%"></div>
+    <div class="verlauf" style="background:linear-gradient(180deg,rgba(0,20,36,.46) 0%,rgba(0,20,36,.08) 22%,rgba(0,20,36,.06) 58%,rgba(0,26,46,.58) 86%,rgba(0,34,61,1) 100%)"></div>
+  </div>
+  <div class="kopf" style="top:62px;padding:0 70px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div class="text" style="height:630px;padding:0 74px 62px;background:linear-gradient(180deg,rgba(0,34,61,0) 0,var(--dunkel) 40px,#002c50 100%)">
+    <div></div>
+    <div>
+      <span class="kicker"><span class="punkt"></span>Ausbildung in Rottweil</span>
+      <h1 style="margin:22px 0 0">Dein Start im<br />Großhandel.</h1>
+      <p class="rolle" style="margin-top:24px">Auszubildende (m/w/d)<br />Niederlassung Rottweil</p>
+      <div style="margin-top:34px"><span class="cta">In 60 Sekunden bewerben &rsaquo;</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= A-B · Ausbildung · Feed 4:5 · Leistungen ======= -->
+<div class="board board--feed" id="a-b" style="background:var(--blau)">
+  <div class="band" style="height:560px">
+    <div class="foto" style="background-image:url('../bilder/einblick-ausbildung.jpg');background-position:50% 12%"></div>
+    <div class="verlauf" style="background:linear-gradient(180deg,rgba(0,18,33,.42) 0%,rgba(0,18,33,.08) 40%,rgba(0,30,58,.22) 80%,rgba(0,62,118,.52) 100%)"></div>
+  </div>
+  <div class="kopf" style="top:58px;padding:0 70px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div class="text" style="height:790px;padding:62px 74px 66px;background:var(--blau)">
+    <div>
+      <span class="kicker"><span class="punkt"></span>Das bekommst du dazu</span>
+      <h1 class="klein" style="margin:20px 0 0">Auszubildende<br />(m/w/d)</h1>
+      <ul class="liste" style="margin-top:36px">
+        <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Individuelle Förderung</span></li>
+        <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Schulungen und Weiterbildung</span></li>
+        <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>E-Bike-Leasing und Firmenfitness</span></li>
+        <li><span class="hk" style="color:#ff8a9c">&rsaquo;</span><span>Weihnachts- und Urlaubsgeld, 30 Tage Urlaub</span></li>
+      </ul>
+    </div>
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:28px">
+      <span class="cta cta--weiss">Jetzt bewerben &rsaquo;</span>
+      <span class="fuss" style="text-align:right">Ohne Lebenslauf<br />Ohne Anschreiben</span>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= A-C · Ausbildung · Story 9:16 ================== -->
+<div class="board board--story" id="a-c">
+  <div class="band" style="height:980px">
+    <div class="foto" style="background-image:url('../bilder/einblick-ausbildung.jpg');background-position:50% 30%"></div>
+    <div class="verlauf" style="background:linear-gradient(180deg,rgba(0,20,36,.54) 0%,rgba(0,20,36,.12) 28%,rgba(0,20,36,.06) 62%,rgba(0,26,46,.56) 88%,rgba(0,34,61,1) 100%)"></div>
+  </div>
+  <div class="kopf" style="top:262px;padding:0 78px"><div class="platte"><img src="../bilder/logo.png" alt="G.U.T. BIRK" /></div><span class="ort">Rottweil</span></div>
+  <div class="text" style="height:940px;padding:0 78px 380px;background:linear-gradient(180deg,rgba(0,34,61,0) 0,var(--dunkel) 40px,#002c50 62%,#002c50 100%)">
+    <div></div>
+    <div>
+      <span class="kicker"><span class="punkt"></span>Ausbildung in Rottweil</span>
+      <h1 style="margin:22px 0 0">Dein Start im<br />Großhandel.</h1>
+      <p class="rolle" style="margin-top:24px">Auszubildende (m/w/d)<br />Niederlassung Rottweil</p>
+      <div style="margin-top:34px"><span class="cta">In 60 Sekunden bewerben &rsaquo;</span></div>
+      <p class="fuss" style="margin-top:28px">Ohne Lebenslauf · Ohne Anschreiben</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
