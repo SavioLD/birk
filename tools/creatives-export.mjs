@@ -19,7 +19,8 @@ const MOTIVE = [
   { id:'v-c', datei:'verkauf-lueftung_story-9x16',          w:1080, h:1920 },
   { id:'a-a', datei:'ausbildung_feed-4x5_foto',             w:1080, h:1350 },
   { id:'a-b', datei:'ausbildung_feed-4x5_leistungen',       w:1080, h:1350 },
-  { id:'a-c', datei:'ausbildung_story-9x16',                w:1080, h:1920 }
+  { id:'a-c', datei:'ausbildung_story-9x16',                w:1080, h:1920 },
+  { id:'v-d', datei:'verkauf-lueftung_quer-1_91x1',          w:1920, h:1005 }
 ];
 
 const nur = process.argv.slice(2);

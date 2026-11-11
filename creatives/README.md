@@ -11,6 +11,7 @@ Karriereseite deaktiviert und kommt hier deshalb nicht vor.
 | `verkauf-lueftung_feed-4x5_foto.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `verkauf-lueftung_feed-4x5_leistungen.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `verkauf-lueftung_story-9x16.jpg` | 9:16 | 1080 × 1920 | Story, Reels |
+| `verkauf-lueftung_quer-1_91x1.jpg` | 1,91:1 | 1920 × 1005 | Feed quer, rechte Spalte, Audience Network |
 | `ausbildung_feed-4x5_foto.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `ausbildung_feed-4x5_leistungen.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `ausbildung_story-9x16.jpg` | 9:16 | 1080 × 1920 | Story, Reels |
@@ -25,7 +26,7 @@ Stockbilder, keine KI-Bilder.
 
 | Motiv | Foto |
 |---|---|
-| Verkauf Lüftung, Foto + Story | `einblick-verkauf.jpg` |
+| Verkauf Lüftung, Foto, Story und Querformat | `einblick-verkauf.jpg` |
 | Verkauf Lüftung, Leistungen | kein Foto – rein typografisch |
 | Ausbildung, alle drei | `einblick-ausbildung.jpg` |
 
@@ -55,6 +56,7 @@ node tools/creatives-export.mjs v-a  # oder einzeln
 | `a-a` | Ausbildung · Feed · Foto |
 | `a-b` | Ausbildung · Feed · Leistungen |
 | `a-c` | Ausbildung · Story |
+| `v-d` | Verkauf Lüftung · Querformat 1,91:1 |
 
 Die Story-Motive halten oben 250 px und unten 300 px frei, damit die
 Bedienelemente von Instagram und Facebook nichts überdecken.
