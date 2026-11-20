@@ -700,9 +700,9 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
   var WEBHOOKS = {
     /* lager: Stelle ist zurzeit deaktiviert, die Kachel bleibt in der
        Lead Table bestehen und erhaelt keine neuen Bewerbungen. */
-    lager:   "https://api-v2.lead-table.com/api/webhook/generic/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNWQ0NGMwYjIzOGU5ZTM5NWQ2IiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODIxfQ.uSfY8W1mjtOJIwC7IgXXboHGV05wLqSZfImhVxaA24g",
-    verkauf: "https://api-v2.lead-table.com/api/webhook/generic/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNGNkNjM1MzcyNDQxNTgxZGYyIiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODA0fQ.WJ09CLQ9kX5oYmHe-7NzHW-dvGT8AUnekkHdorqeol0",
-    azubi:   "https://api-v2.lead-table.com/api/webhook/generic/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNjZkNjM1MzcyNDQxNTg0MTg3IiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODMwfQ.7S_8uXv0Yv3d0wGHYVzs3G7OgB8yWD84rgYxpSTmh1Y"
+    lager:   "https://recruiting.laendle-digital.com/api/eingang/leadtable/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNWQ0NGMwYjIzOGU5ZTM5NWQ2IiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODIxfQ.uSfY8W1mjtOJIwC7IgXXboHGV05wLqSZfImhVxaA24g",
+    verkauf: "https://recruiting.laendle-digital.com/api/eingang/leadtable/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNGNkNjM1MzcyNDQxNTgxZGYyIiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODA0fQ.WJ09CLQ9kX5oYmHe-7NzHW-dvGT8AUnekkHdorqeol0",
+    azubi:   "https://recruiting.laendle-digital.com/api/eingang/leadtable/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWJsZUlEIjoiNmFjNGFiNjZkNjM1MzcyNDQxNTg0MTg3IiwiY3VzdG9tZXJJRCI6IjZhYzRhYjFlZDYzNTM3MjQ0MTU3ZDc3NCIsImFnZW5jeUlEIjoiNjliZDc3NzVlNGQxN2IzOGVkNjUzZDE2IiwiaWF0IjoxNzkxMjczODMwfQ.7S_8uXv0Yv3d0wGHYVzs3G7OgB8yWD84rgYxpSTmh1Y"
   };
 
   var ICONS = {
@@ -808,7 +808,8 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
       key:"verkauf", title:"Mitarbeiter Verkauf Lüftung (m/w/d)", kurz:"Verkauf Lüftung", icon:ICONS.verkauf,
       teaser:"Aufbau unserer eigenen Lüftungsabteilung in Rottweil",
       hook:"Du baust unsere eigene Lüftungsabteilung in Rottweil mit auf – von Anfang an.",
-      aliase:["verkauf","vertrieb","innendienst","verkaeufer","verkäufer","technischer-verkauf","lueftung","lüftung","lueftungstechnik"],
+      aliase:["verkauf","vertrieb","innendienst","verkaeufer","verkäufer","technischer-verkauf","lueftung","lüftung","lueftungstechnik",
+               /* Lager ist abgeschaltet: alte Anzeigen-Links ?stelle=lager landen bei Verkauf */ "lager","lagerist","lagermitarbeiter","logistik","lagerlogistik"],
       tags:["Vollzeit","Rottweil","Neue Abteilung"],
       /* Gesucht wird ausdruecklich fuer die Lueftung, nicht fuer
          Sanitaer oder Heizung. Die Abteilung wird in Rottweil neu
@@ -1339,7 +1340,7 @@ footer{padding:52px 0 36px;background:var(--dark);color:#cfdbe6}
   bindChoiceGrids();
   rebuildSteps();
 
-  /* Deeplink aus der Anzeige: .../?stelle=lager | verkauf | azubi */
+  /* Deeplink aus der Anzeige: .../?stelle=verkauf | azubi (lager → verkauf, solange Lager abgeschaltet ist) */
   (function(){
     var raw = new URLSearchParams(location.search).get("stelle");
     if (!raw) return;
