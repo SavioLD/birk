@@ -15,6 +15,7 @@ Karriereseite deaktiviert und kommt hier deshalb nicht vor.
 | `ausbildung_feed-4x5_foto.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `ausbildung_feed-4x5_leistungen.jpg` | 4:5 | 1080 × 1350 | Feed, Instagram |
 | `ausbildung_story-9x16.jpg` | 9:16 | 1080 × 1920 | Story, Reels |
+| `ausbildung_quer-1_91x1.jpg` | 1,91:1 | 1920 × 1005 | Feed quer, rechte Spalte, Audience Network |
 
 `werbetexte.md` – pro Stelle drei Primärtexte, eine Überschrift, eine
 Beschreibung, dazu die Hinweise zur Schaltung.
@@ -28,7 +29,7 @@ Stockbilder, keine KI-Bilder.
 |---|---|
 | Verkauf Lüftung, Foto, Story und Querformat | `einblick-verkauf.jpg` |
 | Verkauf Lüftung, Leistungen | kein Foto – rein typografisch |
-| Ausbildung, alle drei | `einblick-ausbildung.jpg` |
+| Ausbildung, alle vier | `einblick-ausbildung.jpg` |
 
 Das Leistungs-Motiv für die Lüftungsstelle kommt bewusst ohne Foto aus:
 Der Fuhrpark-Lkw trägt die Aufschrift „Bad / Heizung / Energie", und die
@@ -57,6 +58,7 @@ node tools/creatives-export.mjs v-a  # oder einzeln
 | `a-b` | Ausbildung · Feed · Leistungen |
 | `a-c` | Ausbildung · Story |
 | `v-d` | Verkauf Lüftung · Querformat 1,91:1 |
+| `a-d` | Ausbildung · Querformat 1,91:1 |
 
 Die Story-Motive halten oben 250 px und unten 300 px frei, damit die
 Bedienelemente von Instagram und Facebook nichts überdecken.
